@@ -12,10 +12,14 @@ function readFileList(path) {
   files.forEach((item) => {
     if (item !== 'README.md' && item !== '.DS_St') {
       let currentFile = item.slice(0, -3)
-      fileList.push([
-        `/${path}/${currentFile}`,
-        currentFile
-      ]);
+      // fileList.push([
+      //   `/${path}/${currentFile}`,
+      //   currentFile
+      // ]);
+      fileList.push({
+        text: currentFile,
+        link: `/${path}/${currentFile}.md`,
+      });
     }
   });
   return fileList.reverse();

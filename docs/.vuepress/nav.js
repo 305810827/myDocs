@@ -2,7 +2,7 @@ module.exports = [
   {
     text: '前端',
     ariaLabel: 'front end',
-    items: [
+    children: [
       { text: 'html', link: '/frontend/html/' },
       { text: 'css', link: '/frontend/css/' },
       { text: 'js', link: '/frontend/js/' }

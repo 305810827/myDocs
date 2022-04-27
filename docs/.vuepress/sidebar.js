@@ -2,48 +2,48 @@ const readFileList = require("../../scripts/readFileList.js");
 module.exports = {
       '/guide/': [
         {
-          title: 'Guide',
+          text: 'Guide',
           collapsable: false,
           children: readFileList('guide')
         }
       ],
       '/linux/': [
         {
-          title: 'linux',
+          text: 'linux',
           children: readFileList('linux')
         }
       ],
       '/question/': [
         {
-          title: '每日一题',
+          text: '每日一题',
           collapsable: false,
           children: readFileList('question')
         }
       ],
       '/interview/': [
         {
-          title: 'javascript',
-          // collapsable: true,
+          text: 'javascript',
+          collapsible: true,
           children: readFileList('interview/js')
         }, {
-          title: 'css',
-          // collapsable: true,
+          text: 'css',
+          collapsable: true,
           children: readFileList('interview/css')
         }, {
-          title: 'vue',
-          // collapsable: true,
+          text: 'vue',
+          collapsable: true,
           children: readFileList('interview/vue')
         }, {
-          title: 'netword',
-          // collapsable: true,
+          text: 'netword',
+          collapsable: true,
           children: readFileList('interview/netword')
         }, {
-          title: 'Algorithms',
-          // collapsable: true,
+          text: 'Algorithms',
+          collapsable: true,
           children: readFileList('interview/Algorithms')
         }, {
-          title: 'other',
-          // collapsable: true,
+          text: 'other',
+          collapsable: true,
           children: readFileList('interview/other')
         }
       ],

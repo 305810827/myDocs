@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Date 对象 | 前端文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.c16151cb.css" as="style"><link rel="preload" href="/assets/js/app.d8d2a0bb.js" as="script"><link rel="preload" href="/assets/js/2.72d74e75.js" as="script"><link rel="preload" href="/assets/js/22.c44c384b.js" as="script"><link rel="prefetch" href="/assets/js/10.cf536c6e.js"><link rel="prefetch" href="/assets/js/100.c25647d5.js"><link rel="prefetch" href="/assets/js/101.e37e89a3.js"><link rel="prefetch" href="/assets/js/102.1d078254.js"><link rel="prefetch" href="/assets/js/103.f7145785.js"><link rel="prefetch" href="/assets/js/104.09261142.js"><link rel="prefetch" href="/assets/js/11.4fc5fc97.js"><link rel="prefetch" href="/assets/js/12.f434524e.js"><link rel="prefetch" href="/assets/js/13.da6877eb.js"><link rel="prefetch" href="/assets/js/14.14ab89d2.js"><link rel="prefetch" href="/assets/js/15.3e7434dc.js"><link rel="prefetch" href="/assets/js/16.b71d2e49.js"><link rel="prefetch" href="/assets/js/17.b0ce1778.js"><link rel="prefetch" href="/assets/js/18.6fa35daa.js"><link rel="prefetch" href="/assets/js/19.ff1ddec4.js"><link rel="prefetch" href="/assets/js/20.e4d72525.js"><link rel="prefetch" href="/assets/js/21.4d0efa1c.js"><link rel="prefetch" href="/assets/js/23.9a2877af.js"><link rel="prefetch" href="/assets/js/24.360e6d19.js"><link rel="prefetch" href="/assets/js/25.e17e7858.js"><link rel="prefetch" href="/assets/js/26.b92608e0.js"><link rel="prefetch" href="/assets/js/27.a7d4e0dd.js"><link rel="prefetch" href="/assets/js/28.bfb6bcc2.js"><link rel="prefetch" href="/assets/js/29.bf390e39.js"><link rel="prefetch" href="/assets/js/3.e9c89680.js"><link rel="prefetch" href="/assets/js/30.8a7d3e7f.js"><link rel="prefetch" href="/assets/js/31.c3b06015.js"><link rel="prefetch" href="/assets/js/32.0c2939d3.js"><link rel="prefetch" href="/assets/js/33.fa4983ed.js"><link rel="prefetch" href="/assets/js/34.0bc17c61.js"><link rel="prefetch" href="/assets/js/35.1d9415b5.js"><link rel="prefetch" href="/assets/js/36.a2806d43.js"><link rel="prefetch" href="/assets/js/37.b51eeb79.js"><link rel="prefetch" href="/assets/js/38.c22e3ed1.js"><link rel="prefetch" href="/assets/js/39.53458df7.js"><link rel="prefetch" href="/assets/js/4.cde39425.js"><link rel="prefetch" href="/assets/js/40.651682e8.js"><link rel="prefetch" href="/assets/js/41.aebdf2fa.js"><link rel="prefetch" href="/assets/js/42.bc98c52a.js"><link rel="prefetch" href="/assets/js/43.484d01b2.js"><link rel="prefetch" href="/assets/js/44.a428ddbd.js"><link rel="prefetch" href="/assets/js/45.6d4d1019.js"><link rel="prefetch" href="/assets/js/46.7e0df30c.js"><link rel="prefetch" href="/assets/js/47.f43ef89c.js"><link rel="prefetch" href="/assets/js/48.f0c83a91.js"><link rel="prefetch" href="/assets/js/49.7689fff4.js"><link rel="prefetch" href="/assets/js/5.3988f2a7.js"><link rel="prefetch" href="/assets/js/50.3adc84a7.js"><link rel="prefetch" href="/assets/js/51.6f405f0e.js"><link rel="prefetch" href="/assets/js/52.8cacdf11.js"><link rel="prefetch" href="/assets/js/53.a5812d23.js"><link rel="prefetch" href="/assets/js/54.0c04368f.js"><link rel="prefetch" href="/assets/js/55.fbc6c3c7.js"><link rel="prefetch" href="/assets/js/56.7811d98a.js"><link rel="prefetch" href="/assets/js/57.31eceea4.js"><link rel="prefetch" href="/assets/js/58.ac302dd8.js"><link rel="prefetch" href="/assets/js/59.46f9fff4.js"><link rel="prefetch" href="/assets/js/6.3028bb71.js"><link rel="prefetch" href="/assets/js/60.205b17bd.js"><link rel="prefetch" href="/assets/js/61.f68e6746.js"><link rel="prefetch" href="/assets/js/62.95ddb372.js"><link rel="prefetch" href="/assets/js/63.73425831.js"><link rel="prefetch" href="/assets/js/64.da05ef5f.js"><link rel="prefetch" href="/assets/js/65.6550e3b0.js"><link rel="prefetch" href="/assets/js/66.d9ef6fa7.js"><link rel="prefetch" href="/assets/js/67.ebe75aad.js"><link rel="prefetch" href="/assets/js/68.39c19da4.js"><link rel="prefetch" href="/assets/js/69.53c7de37.js"><link rel="prefetch" href="/assets/js/7.57913225.js"><link rel="prefetch" href="/assets/js/70.7e276bbb.js"><link rel="prefetch" href="/assets/js/71.d72f9f89.js"><link rel="prefetch" href="/assets/js/72.8aaf78f1.js"><link rel="prefetch" href="/assets/js/73.d1ddf670.js"><link rel="prefetch" href="/assets/js/74.bf4e85f1.js"><link rel="prefetch" href="/assets/js/75.e9547c4f.js"><link rel="prefetch" href="/assets/js/76.c2abb8bd.js"><link rel="prefetch" href="/assets/js/77.f162bb01.js"><link rel="prefetch" href="/assets/js/78.2780caa3.js"><link rel="prefetch" href="/assets/js/79.8be5fdb6.js"><link rel="prefetch" href="/assets/js/8.0bca1ec9.js"><link rel="prefetch" href="/assets/js/80.2fb0101e.js"><link rel="prefetch" href="/assets/js/81.209917c2.js"><link rel="prefetch" href="/assets/js/82.04ba13ae.js"><link rel="prefetch" href="/assets/js/83.3d55152d.js"><link rel="prefetch" href="/assets/js/84.12f53b61.js"><link rel="prefetch" href="/assets/js/85.37fb18f7.js"><link rel="prefetch" href="/assets/js/86.29a425ed.js"><link rel="prefetch" href="/assets/js/87.90b95889.js"><link rel="prefetch" href="/assets/js/88.3daecc66.js"><link rel="prefetch" href="/assets/js/89.c8e4ec1a.js"><link rel="prefetch" href="/assets/js/9.b58cbdb9.js"><link rel="prefetch" href="/assets/js/90.a0352888.js"><link rel="prefetch" href="/assets/js/91.d3d51315.js"><link rel="prefetch" href="/assets/js/92.e1861fd3.js"><link rel="prefetch" href="/assets/js/93.ca928336.js"><link rel="prefetch" href="/assets/js/94.ff60a408.js"><link rel="prefetch" href="/assets/js/95.5d1c4712.js"><link rel="prefetch" href="/assets/js/96.3be6aa08.js"><link rel="prefetch" href="/assets/js/97.b1bb574e.js"><link rel="prefetch" href="/assets/js/98.9acfeac6.js"><link rel="prefetch" href="/assets/js/99.774eb619.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c16151cb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/js/" class="nav-link router-link-active">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><a href="https://github.com/305810827" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/js/" class="nav-link router-link-active">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><a href="https://github.com/305810827" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/frontend/js/" aria-current="page" class="sidebar-link">String 对象</a></li><li><a href="/frontend/js/array.html" class="sidebar-link">Array 对象</a></li><li><a href="/frontend/js/object.html" class="sidebar-link">Object 对象</a></li><li><a href="/frontend/js/math.html" class="sidebar-link">Math 对象</a></li><li><a href="/frontend/js/date.html" aria-current="page" class="active sidebar-link">Date 对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/js/date.html#普通函数的用法" class="sidebar-link">普通函数的用法</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#构造函数的用法" class="sidebar-link">构造函数的用法</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#日期的运算" class="sidebar-link">日期的运算</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#静态方法" class="sidebar-link">静态方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/js/date.html#date-now" class="sidebar-link">Date.now()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#date-parse" class="sidebar-link">Date.parse()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#date-utc" class="sidebar-link">Date.UTC()</a></li></ul></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#实例方法" class="sidebar-link">实例方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/js/date.html#valueof" class="sidebar-link">valueOf()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#tostring" class="sidebar-link">toString()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#toutcstring" class="sidebar-link">toUTCString()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#toisostring" class="sidebar-link">toISOString()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#tojson" class="sidebar-link">toJSON()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#todatestring" class="sidebar-link">toDateString()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#totimestring" class="sidebar-link">toTimeString()</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#get-类方法" class="sidebar-link">get 类方法</a></li><li class="sidebar-sub-header"><a href="/frontend/js/date.html#set-类方法" class="sidebar-link">set 类方法</a></li></ul></li></ul></li><li><a href="/frontend/js/set.html" class="sidebar-link">Set 对象</a></li><li><a href="/frontend/js/map.html" class="sidebar-link">Map 对象</a></li><li><a href="/frontend/js/reflect.html" class="sidebar-link">Reflect 对象</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="date-对象"><a href="#date-对象" class="header-anchor">#</a> Date 对象</h1> <p>网道（WangDoc.com），互联网文档计划</p> <p><code>Date</code>对象是 JavaScript 原生的时间库。它以国际标准时间（UTC）1970年1月1日00:00:00作为时间的零点，可以表示的时间范围是前后各1亿天（单位为毫秒）。</p> <h2 id="普通函数的用法"><a href="#普通函数的用法" class="header-anchor">#</a> 普通函数的用法</h2> <p><code>Date</code>对象可以作为普通函数直接调用，返回一个代表当前时间的字符串。</p> <div class="language- extra-class"><pre class="language-text"><code>Date()
+// &quot;Tue Dec 01 2015 09:34:43 GMT+0800 (CST)&quot;
+</code></pre></div><p>注意，即使带有参数，<code>Date</code>作为普通函数使用时，返回的还是当前时间。</p> <div class="language- extra-class"><pre class="language-text"><code>Date(2000, 1, 1)
+// &quot;Tue Dec 01 2015 09:34:43 GMT+0800 (CST)&quot;
+</code></pre></div><p>上面代码说明，无论有没有参数，直接调用<code>Date</code>总是返回当前时间。</p> <h2 id="构造函数的用法"><a href="#构造函数的用法" class="header-anchor">#</a> 构造函数的用法</h2> <p><code>Date</code>还可以当作构造函数使用。对它使用<code>new</code>命令，会返回一个<code>Date</code>对象的实例。如果不加参数，实例代表的就是当前时间。</p> <div class="language- extra-class"><pre class="language-text"><code>var today = new Date();
+</code></pre></div><p><code>Date</code>实例有一个独特的地方。其他对象求值的时候，都是默认调用<code>.valueOf()</code>方法，但是<code>Date</code>实例求值的时候，默认调用的是<code>toString()</code>方法。这导致对<code>Date</code>实例求值，返回的是一个字符串，代表该实例对应的时间。</p> <div class="language- extra-class"><pre class="language-text"><code>var today = new Date();
+
+today
+// &quot;Tue Dec 01 2015 09:34:43 GMT+0800 (CST)&quot;
+
+// 等同于
+today.toString()
+// &quot;Tue Dec 01 2015 09:34:43 GMT+0800 (CST)&quot;
+</code></pre></div><p>上面代码中，<code>today</code>是<code>Date</code>的实例，直接求值等同于调用<code>toString</code>方法。</p> <p>作为构造函数时，<code>Date</code>对象可以接受多种格式的参数，返回一个该参数对应的时间实例。</p> <div class="language- extra-class"><pre class="language-text"><code>// 参数为时间零点开始计算的毫秒数
+new Date(1378218728000)
+// Tue Sep 03 2013 22:32:08 GMT+0800 (CST)
+
+// 参数为日期字符串
+new Date('January 6, 2013');
+// Sun Jan 06 2013 00:00:00 GMT+0800 (CST)
+
+// 参数为多个整数，
+// 代表年、月、日、小时、分钟、秒、毫秒
+new Date(2013, 0, 1, 0, 0, 0, 0)
+// Tue Jan 01 2013 00:00:00 GMT+0800 (CST)
+</code></pre></div><p>关于<code>Date</code>构造函数的参数，有几点说明。</p> <p>第一点，参数可以是负整数，代表1970年元旦之前的时间。</p> <div class="language- extra-class"><pre class="language-text"><code>new Date(-1378218728000)
+// Fri Apr 30 1926 17:27:52 GMT+0800 (CST)
+</code></pre></div><p>第二点，只要是能被<code>Date.parse()</code>方法解析的字符串，都可以当作参数。</p> <div class="language- extra-class"><pre class="language-text"><code>new Date('2013-2-15')
+new Date('2013/2/15')
+new Date('02/15/2013')
+new Date('2013-FEB-15')
+new Date('FEB, 15, 2013')
+new Date('FEB 15, 2013')
+new Date('February, 15, 2013')
+new Date('February 15, 2013')
+new Date('15 Feb 2013')
+new Date('15, February, 2013')
+// Fri Feb 15 2013 00:00:00 GMT+0800 (CST)
+</code></pre></div><p>上面多种日期字符串的写法，返回的都是同一个时间。</p> <p>第三，参数为年、月、日等多个整数时，年和月是不能省略的，其他参数都可以省略的。也就是说，这时至少需要两个参数，因为如果只使用“年”这一个参数，<code>Date</code>会将其解释为毫秒数。</p> <div class="language- extra-class"><pre class="language-text"><code>new Date(2013)
+// Thu Jan 01 1970 08:00:02 GMT+0800 (CST)
+</code></pre></div><p>上面代码中，2013被解释为毫秒数，而不是年份。</p> <div class="language- extra-class"><pre class="language-text"><code>new Date(2013, 0)
+// Tue Jan 01 2013 00:00:00 GMT+0800 (CST)
+new Date(2013, 0, 1)
+// Tue Jan 01 2013 00:00:00 GMT+0800 (CST)
+new Date(2013, 0, 1, 0)
+// Tue Jan 01 2013 00:00:00 GMT+0800 (CST)
+new Date(2013, 0, 1, 0, 0, 0, 0)
+// Tue Jan 01 2013 00:00:00 GMT+0800 (CST)
+</code></pre></div><p>上面代码中，不管有几个参数，返回的都是2013年1月1日零点。</p> <p>最后，各个参数的取值范围如下。</p> <ul><li>年：使用四位数年份，比如<code>2000</code>。如果写成两位数或个位数，则加上<code>1900</code>，即<code>10</code>代表1910年。如果是负数，表示公元前。</li> <li>月：<code>0</code>表示一月，依次类推，<code>11</code>表示12月。</li> <li>日：<code>1</code>到<code>31</code>。</li> <li>小时：<code>0</code>到<code>23</code>。</li> <li>分钟：<code>0</code>到<code>59</code>。</li> <li>秒：<code>0</code>到<code>59</code></li> <li>毫秒：<code>0</code>到<code>999</code>。</li></ul> <p>注意，月份从<code>0</code>开始计算，但是，天数从<code>1</code>开始计算。另外，除了日期的默认值为<code>1</code>，小时、分钟、秒钟和毫秒的默认值都是<code>0</code>。</p> <p>这些参数如果超出了正常范围，会被自动折算。比如，如果月设为<code>15</code>，就折算为下一年的4月。</p> <div class="language- extra-class"><pre class="language-text"><code>new Date(2013, 15)
+// Tue Apr 01 2014 00:00:00 GMT+0800 (CST)
+new Date(2013, 0, 0)
+// Mon Dec 31 2012 00:00:00 GMT+0800 (CST)
+</code></pre></div><p>上面代码的第二个例子，日期设为<code>0</code>，就代表上个月的最后一天。</p> <p>参数还可以使用负数，表示扣去的时间。</p> <div class="language- extra-class"><pre class="language-text"><code>new Date(2013, -1)
+// Sat Dec 01 2012 00:00:00 GMT+0800 (CST)
+new Date(2013, 0, -1)
+// Sun Dec 30 2012 00:00:00 GMT+0800 (CST)
+</code></pre></div><p>上面代码中，分别对月和日使用了负数，表示从基准日扣去相应的时间。</p> <h2 id="日期的运算"><a href="#日期的运算" class="header-anchor">#</a> 日期的运算</h2> <p>类型自动转换时，<code>Date</code>实例如果转为数值，则等于对应的毫秒数；如果转为字符串，则等于对应的日期字符串。所以，两个日期实例对象进行减法运算时，返回的是它们间隔的毫秒数；进行加法运算时，返回的是两个字符串连接而成的新字符串。</p> <div class="language- extra-class"><pre class="language-text"><code>var d1 = new Date(2000, 2, 1);
+var d2 = new Date(2000, 3, 1);
+
+d2 - d1
+// 2678400000
+d2 + d1
+// &quot;Sat Apr 01 2000 00:00:00 GMT+0800 (CST)Wed Mar 01 2000 00:00:00 GMT+0800 (CST)&quot;
+</code></pre></div><h2 id="静态方法"><a href="#静态方法" class="header-anchor">#</a> 静态方法</h2> <h3 id="date-now"><a href="#date-now" class="header-anchor">#</a> Date.now()</h3> <p><code>Date.now</code>方法返回当前时间距离时间零点（1970年1月1日 00:00:00 UTC）的毫秒数，相当于 Unix 时间戳乘以1000。</p> <div class="language- extra-class"><pre class="language-text"><code>Date.now() // 1364026285194
+</code></pre></div><h3 id="date-parse"><a href="#date-parse" class="header-anchor">#</a> Date.parse()</h3> <p><code>Date.parse</code>方法用来解析日期字符串，返回该时间距离时间零点（1970年1月1日 00:00:00）的毫秒数。</p> <p>日期字符串应该符合 RFC 2822 和 ISO 8061 这两个标准，即<code>YYYY-MM-DDTHH:mm:ss.sssZ</code>格式，其中最后的<code>Z</code>表示时区。但是，其他格式也可以被解析，请看下面的例子。</p> <div class="language- extra-class"><pre class="language-text"><code>Date.parse('Aug 9, 1995')
+Date.parse('January 26, 2011 13:51:50')
+Date.parse('Mon, 25 Dec 1995 13:30:00 GMT')
+Date.parse('Mon, 25 Dec 1995 13:30:00 +0430')
+Date.parse('2011-10-10')
+Date.parse('2011-10-10T14:48:00')
+</code></pre></div><p>上面的日期字符串都可以解析。</p> <p>如果解析失败，返回<code>NaN</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>Date.parse('xxx') // NaN
+</code></pre></div><h3 id="date-utc"><a href="#date-utc" class="header-anchor">#</a> Date.UTC()</h3> <p><code>Date.UTC</code>方法接受年、月、日等变量作为参数，返回该时间距离时间零点（1970年1月1日 00:00:00 UTC）的毫秒数。</p> <div class="language- extra-class"><pre class="language-text"><code>// 格式
+Date.UTC(year, month[, date[, hrs[, min[, sec[, ms]]]]])
+
+// 用法
+Date.UTC(2011, 0, 1, 2, 3, 4, 567)
+// 1293847384567
+</code></pre></div><p>该方法的参数用法与<code>Date</code>构造函数完全一致，比如月从<code>0</code>开始计算，日期从<code>1</code>开始计算。区别在于<code>Date.UTC</code>方法的参数，会被解释为 UTC 时间（世界标准时间），<code>Date</code>构造函数的参数会被解释为当前时区的时间。</p> <h2 id="实例方法"><a href="#实例方法" class="header-anchor">#</a> 实例方法</h2> <p><code>Date</code>的实例对象，有几十个自己的方法，除了<code>valueOf</code>和<code>toString</code>，可以分为以下三类。</p> <ul><li><code>to</code>类：从<code>Date</code>对象返回一个字符串，表示指定的时间。</li> <li><code>get</code>类：获取<code>Date</code>对象的日期和时间。</li> <li><code>set</code>类：设置<code>Date</code>对象的日期和时间。</li></ul> <h3 id="valueof"><a href="#valueof" class="header-anchor">#</a> valueOf()</h3> <p><code>valueOf</code>方法返回实例对象距离时间零点（1970年1月1日00:00:00 UTC）对应的毫秒数，该方法等同于<code>getTime</code>方法。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date();
+
+d.valueOf() // 1362790014817
+d.getTime() // 1362790014817
+</code></pre></div><p>预期为数值的场合，<code>Date</code>实例会自动调用该方法，所以可以用下面的方法计算时间的间隔。</p> <div class="language- extra-class"><pre class="language-text"><code>var start = new Date();
+// ...
+var end = new Date();
+var elapsed = end - start;
+</code></pre></div><h3 id="tostring"><a href="#tostring" class="header-anchor">#</a> toString()</h3> <p><code>toString</code>方法返回一个完整的日期字符串。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+
+d.toString()
+// &quot;Tue Jan 01 2013 00:00:00 GMT+0800 (CST)&quot;
+d
+// &quot;Tue Jan 01 2013 00:00:00 GMT+0800 (CST)&quot;
+</code></pre></div><p>因为<code>toString</code>是默认的调用方法，所以如果直接读取<code>Date</code>实例，就相当于调用这个方法。</p> <h3 id="toutcstring"><a href="#toutcstring" class="header-anchor">#</a> toUTCString()</h3> <p><code>toUTCString</code>方法返回对应的 UTC 时间，也就是比北京时间晚8个小时。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+
+d.toUTCString()
+// &quot;Mon, 31 Dec 2012 16:00:00 GMT&quot;
+</code></pre></div><h3 id="toisostring"><a href="#toisostring" class="header-anchor">#</a> toISOString()</h3> <p><code>toISOString</code>方法返回对应时间的 ISO8601 写法。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+
+d.toISOString()
+// &quot;2012-12-31T16:00:00.000Z&quot;
+</code></pre></div><p>注意，<code>toISOString</code>方法返回的总是 UTC 时区的时间。</p> <h3 id="tojson"><a href="#tojson" class="header-anchor">#</a> <strong>toJSON()</strong></h3> <p><code>toJSON</code>方法返回一个符合 JSON 格式的 ISO 日期字符串，与<code>toISOString</code>方法的返回结果完全相同。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+
+d.toJSON()
+// &quot;2012-12-31T16:00:00.000Z&quot;
+</code></pre></div><h3 id="todatestring"><a href="#todatestring" class="header-anchor">#</a> <strong>toDateString()</strong></h3> <p><code>toDateString</code>方法返回日期字符串（不含小时、分和秒）。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+d.toDateString() // &quot;Tue Jan 01 2013&quot;
+</code></pre></div><h3 id="totimestring"><a href="#totimestring" class="header-anchor">#</a> <strong>toTimeString()</strong></h3> <p><code>toTimeString</code>方法返回时间字符串（不含年月日）。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+d.toTimeString() // &quot;00:00:00 GMT+0800 (CST)&quot;
+</code></pre></div><p><strong>（7）本地时间</strong></p> <p>以下三种方法，可以将 Date 实例转为表示本地时间的字符串。</p> <ul><li><code>Date.prototype.toLocaleString()</code>：完整的本地时间。</li> <li><code>Date.prototype.toLocaleDateString()</code>：本地日期（不含小时、分和秒）。</li> <li><code>Date.prototype.toLocaleTimeString()</code>：本地时间（不含年月日）。</li></ul> <p>下面是用法实例。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+
+d.toLocaleString()
+// 中文版浏览器为&quot;2013年1月1日 上午12:00:00&quot;
+// 英文版浏览器为&quot;1/1/2013 12:00:00 AM&quot;
+
+d.toLocaleDateString()
+// 中文版浏览器为&quot;2013年1月1日&quot;
+// 英文版浏览器为&quot;1/1/2013&quot;
+
+d.toLocaleTimeString()
+// 中文版浏览器为&quot;上午12:00:00&quot;
+// 英文版浏览器为&quot;12:00:00 AM&quot;
+</code></pre></div><p>这三个方法都有两个可选的参数。</p> <div class="language- extra-class"><pre class="language-text"><code>dateObj.toLocaleString([locales[, options]])
+dateObj.toLocaleDateString([locales[, options]])
+dateObj.toLocaleTimeString([locales[, options]])
+</code></pre></div><p>这两个参数中，<code>locales</code>是一个指定所用语言的字符串，<code>options</code>是一个配置对象。下面是<code>locales</code>的例子，分别采用<code>en-US</code>和<code>zh-CN</code>语言设定。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+
+d.toLocaleString('en-US') // &quot;1/1/2013, 12:00:00 AM&quot;
+d.toLocaleString('zh-CN') // &quot;2013/1/1 上午12:00:00&quot;
+
+d.toLocaleDateString('en-US') // &quot;1/1/2013&quot;
+d.toLocaleDateString('zh-CN') // &quot;2013/1/1&quot;
+
+d.toLocaleTimeString('en-US') // &quot;12:00:00 AM&quot;
+d.toLocaleTimeString('zh-CN') // &quot;上午12:00:00&quot;
+</code></pre></div><p><code>options</code>配置对象有以下属性。</p> <ul><li><code>dateStyle</code>：可能的值为<code>full</code>、<code>long</code>、<code>medium</code>、<code>short</code>。</li> <li><code>timeStyle</code>：可能的值为<code>full</code>、<code>long</code>、<code>medium</code>、<code>short</code>。</li> <li><code>month</code>：可能的值为<code>numeric</code>、<code>2-digit</code>、<code>long</code>、<code>short</code>、<code>narrow</code>。</li> <li><code>year</code>：可能的值为<code>numeric</code>、<code>2-digit</code>。</li> <li><code>weekday</code>：可能的值为<code>long</code>、<code>short</code>、<code>narrow</code>。</li> <li><code>day</code>、<code>hour</code>、<code>minute</code>、<code>second</code>：可能的值为<code>numeric</code>、<code>2-digit</code>。</li> <li><code>timeZone</code>：可能的值为 IANA 的时区数据库。</li> <li><code>timeZooneName</code>：可能的值为<code>long</code>、<code>short</code>。</li> <li><code>hour12</code>：24小时周期还是12小时周期，可能的值为<code>true</code>、<code>false</code>。</li></ul> <p>下面是用法实例。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date(2013, 0, 1);
+
+d.toLocaleDateString('en-US', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+})
+// &quot;Tuesday, January 1, 2013&quot;
+
+d.toLocaleDateString('en-US', {
+  day: &quot;2-digit&quot;,
+  month: &quot;long&quot;,
+  year: &quot;2-digit&quot;
+});
+// &quot;January 01, 13&quot;
+
+d.toLocaleTimeString('en-US', {
+  timeZone: 'UTC',
+  timeZoneName: 'short'
+})
+// &quot;4:00:00 PM UTC&quot;
+
+d.toLocaleTimeString('en-US', {
+  timeZone: 'Asia/Shanghai',
+  timeZoneName: 'long'
+})
+// &quot;12:00:00 AM China Standard Time&quot;
+
+d.toLocaleTimeString('en-US', {
+  hour12: false
+})
+// &quot;00:00:00&quot;
+
+d.toLocaleTimeString('en-US', {
+  hour12: true
+})
+// &quot;12:00:00 AM&quot;
+</code></pre></div><h3 id="get-类方法"><a href="#get-类方法" class="header-anchor">#</a> get 类方法</h3> <p><code>Date</code>对象提供了一系列<code>get*</code>方法，用来获取实例对象某个方面的值。</p> <ul><li><code>getTime()</code>：返回实例距离1970年1月1日00:00:00的毫秒数，等同于<code>valueOf</code>方法。</li> <li><code>getDate()</code>：返回实例对象对应每个月的几号（从1开始）。</li> <li><code>getDay()</code>：返回星期几，星期日为0，星期一为1，以此类推。</li> <li><code>getFullYear()</code>：返回四位的年份。</li> <li><code>getMonth()</code>：返回月份（0表示1月，11表示12月）。</li> <li><code>getHours()</code>：返回小时（0-23）。</li> <li><code>getMilliseconds()</code>：返回毫秒（0-999）。</li> <li><code>getMinutes()</code>：返回分钟（0-59）。</li> <li><code>getSeconds()</code>：返回秒（0-59）。</li> <li><code>getTimezoneOffset()</code>：返回当前时间与 UTC 的时区差异，以分钟表示，返回结果考虑到了夏令时因素。</li></ul> <p>所有这些<code>get*</code>方法返回的都是整数，不同方法返回值的范围不一样。</p> <ul><li>分钟和秒：0 到 59</li> <li>小时：0 到 23</li> <li>星期：0（星期天）到 6（星期六）</li> <li>日期：1 到 31</li> <li>月份：0（一月）到 11（十二月）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date('January 6, 2013');
+
+d.getDate() // 6
+d.getMonth() // 0
+d.getFullYear() // 2013
+d.getTimezoneOffset() // -480
+</code></pre></div><p>上面代码中，最后一行返回<code>-480</code>，即 UTC 时间减去当前时间，单位是分钟。<code>-480</code>表示 UTC 比当前时间少480分钟，即当前时区比 UTC 早8个小时。</p> <p>下面是一个例子，计算本年度还剩下多少天。</p> <div class="language- extra-class"><pre class="language-text"><code>function leftDays() {
+  var today = new Date();
+  var endYear = new Date(today.getFullYear(), 11, 31, 23, 59, 59, 999);
+  var msPerDay = 24 * 60 * 60 * 1000;
+  return Math.round((endYear.getTime() - today.getTime()) / msPerDay);
+}
+</code></pre></div><p>上面这些<code>get*</code>方法返回的都是当前时区的时间，<code>Date</code>对象还提供了这些方法对应的 UTC 版本，用来返回 UTC 时间。</p> <ul><li><code>getUTCDate()</code></li> <li><code>getUTCFullYear()</code></li> <li><code>getUTCMonth()</code></li> <li><code>getUTCDay()</code></li> <li><code>getUTCHours()</code></li> <li><code>getUTCMinutes()</code></li> <li><code>getUTCSeconds()</code></li> <li><code>getUTCMilliseconds()</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date('January 6, 2013');
+
+d.getDate() // 6
+d.getUTCDate() // 5
+</code></pre></div><p>上面代码中，实例对象<code>d</code>表示当前时区（东八时区）的1月6日0点0分0秒，这个时间对于当前时区来说是1月6日，所以<code>getDate</code>方法返回6，对于 UTC 时区来说是1月5日，所以<code>getUTCDate</code>方法返回5。</p> <h3 id="set-类方法"><a href="#set-类方法" class="header-anchor">#</a> set 类方法</h3> <p><code>Date</code>对象提供了一系列<code>set*</code>方法，用来设置实例对象的各个方面。</p> <ul><li><code>setDate(date)</code>：设置实例对象对应的每个月的几号（1-31），返回改变后毫秒时间戳。</li> <li><code>setFullYear(year [, month, date])</code>：设置四位年份。</li> <li><code>setHours(hour [, min, sec, ms])</code>：设置小时（0-23）。</li> <li><code>setMilliseconds()</code>：设置毫秒（0-999）。</li> <li><code>setMinutes(min [, sec, ms])</code>：设置分钟（0-59）。</li> <li><code>setMonth(month [, date])</code>：设置月份（0-11）。</li> <li><code>setSeconds(sec [, ms])</code>：设置秒（0-59）。</li> <li><code>setTime(milliseconds)</code>：设置毫秒时间戳。</li></ul> <p>这些方法基本是跟<code>get*</code>方法一一对应的，但是没有<code>setDay</code>方法，因为星期几是计算出来的，而不是设置的。另外，需要注意的是，凡是涉及到设置月份，都是从0开始算的，即<code>0</code>是1月，<code>11</code>是12月。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date ('January 6, 2013');
+
+d // Sun Jan 06 2013 00:00:00 GMT+0800 (CST)
+d.setDate(9) // 1357660800000
+d // Wed Jan 09 2013 00:00:00 GMT+0800 (CST)
+</code></pre></div><p><code>set*</code>方法的参数都会自动折算。以<code>setDate()</code>为例，如果参数超过当月的最大天数，则向下一个月顺延，如果参数是负数，表示从上个月的最后一天开始减去的天数。</p> <div class="language- extra-class"><pre class="language-text"><code>var d1 = new Date('January 6, 2013');
+
+d1.setDate(32) // 1359648000000
+d1 // Fri Feb 01 2013 00:00:00 GMT+0800 (CST)
+
+var d2 = new Date ('January 6, 2013');
+
+d2.setDate(-1) // 1356796800000
+d2 // Sun Dec 30 2012 00:00:00 GMT+0800 (CST)
+</code></pre></div><p>上面代码中，<code>d1.setDate(32)</code>将日期设为1月份的32号，因为1月份只有31号，所以自动折算为2月1日。<code>d2.setDate(-1)</code>表示设为上个月的倒数第二天，即12月30日。</p> <p><code>set</code>类方法和<code>get</code>类方法，可以结合使用，得到相对时间。</p> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date();
+
+// 将日期向后推1000天
+d.setDate(d.getDate() + 1000);
+// 将时间设为6小时后
+d.setHours(d.getHours() + 6);
+// 将年份设为去年
+d.setFullYear(d.getFullYear() - 1);
+</code></pre></div><p><code>set*</code>系列方法除了<code>setTime()</code>，都有对应的 UTC 版本，即设置 UTC 时区的时间。</p> <ul><li><code>setUTCDate()</code></li> <li><code>setUTCFullYear()</code></li> <li><code>setUTCHours()</code></li> <li><code>setUTCMilliseconds()</code></li> <li><code>setUTCMinutes()</code></li> <li><code>setUTCMonth()</code></li> <li><code>setUTCSeconds()</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>var d = new Date('January 6, 2013');
+d.getUTCHours() // 16
+d.setUTCHours(22) // 1357423200000
+d // Sun Jan 06 2013 06:00:00 GMT+0800 (CST)
+</code></pre></div><p>上面代码中，本地时区（东八时区）的1月6日0点0分，是 UTC 时区的前一天下午16点。设为 UTC 时区的22点以后，就变为本地时区的上午6点。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/js/math.html" class="prev">
+        Math 对象
+      </a></span> <span class="next"><a href="/frontend/js/set.html">
+        Set 对象
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d8d2a0bb.js" defer></script><script src="/assets/js/2.72d74e75.js" defer></script><script src="/assets/js/22.c44c384b.js" defer></script>
+  </body>
+</html>

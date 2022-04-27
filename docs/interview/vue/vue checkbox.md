@@ -1,0 +1,1 @@
+在引用input框的checkbox属性时，选中后会出现数据已经刷新，checkbox选中状态不会改变。这时在事件触发后可以调用this.$forceUpdate()，强制刷新页面解决这个问题。

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue的双向数据绑定 | 前端文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.c16151cb.css" as="style"><link rel="preload" href="/assets/js/app.d8d2a0bb.js" as="script"><link rel="preload" href="/assets/js/2.72d74e75.js" as="script"><link rel="preload" href="/assets/js/80.2fb0101e.js" as="script"><link rel="prefetch" href="/assets/js/10.cf536c6e.js"><link rel="prefetch" href="/assets/js/100.c25647d5.js"><link rel="prefetch" href="/assets/js/101.e37e89a3.js"><link rel="prefetch" href="/assets/js/102.1d078254.js"><link rel="prefetch" href="/assets/js/103.f7145785.js"><link rel="prefetch" href="/assets/js/104.09261142.js"><link rel="prefetch" href="/assets/js/11.4fc5fc97.js"><link rel="prefetch" href="/assets/js/12.f434524e.js"><link rel="prefetch" href="/assets/js/13.da6877eb.js"><link rel="prefetch" href="/assets/js/14.14ab89d2.js"><link rel="prefetch" href="/assets/js/15.3e7434dc.js"><link rel="prefetch" href="/assets/js/16.b71d2e49.js"><link rel="prefetch" href="/assets/js/17.b0ce1778.js"><link rel="prefetch" href="/assets/js/18.6fa35daa.js"><link rel="prefetch" href="/assets/js/19.ff1ddec4.js"><link rel="prefetch" href="/assets/js/20.e4d72525.js"><link rel="prefetch" href="/assets/js/21.4d0efa1c.js"><link rel="prefetch" href="/assets/js/22.c44c384b.js"><link rel="prefetch" href="/assets/js/23.9a2877af.js"><link rel="prefetch" href="/assets/js/24.360e6d19.js"><link rel="prefetch" href="/assets/js/25.e17e7858.js"><link rel="prefetch" href="/assets/js/26.b92608e0.js"><link rel="prefetch" href="/assets/js/27.a7d4e0dd.js"><link rel="prefetch" href="/assets/js/28.bfb6bcc2.js"><link rel="prefetch" href="/assets/js/29.bf390e39.js"><link rel="prefetch" href="/assets/js/3.e9c89680.js"><link rel="prefetch" href="/assets/js/30.8a7d3e7f.js"><link rel="prefetch" href="/assets/js/31.c3b06015.js"><link rel="prefetch" href="/assets/js/32.0c2939d3.js"><link rel="prefetch" href="/assets/js/33.fa4983ed.js"><link rel="prefetch" href="/assets/js/34.0bc17c61.js"><link rel="prefetch" href="/assets/js/35.1d9415b5.js"><link rel="prefetch" href="/assets/js/36.a2806d43.js"><link rel="prefetch" href="/assets/js/37.b51eeb79.js"><link rel="prefetch" href="/assets/js/38.c22e3ed1.js"><link rel="prefetch" href="/assets/js/39.53458df7.js"><link rel="prefetch" href="/assets/js/4.cde39425.js"><link rel="prefetch" href="/assets/js/40.651682e8.js"><link rel="prefetch" href="/assets/js/41.aebdf2fa.js"><link rel="prefetch" href="/assets/js/42.bc98c52a.js"><link rel="prefetch" href="/assets/js/43.484d01b2.js"><link rel="prefetch" href="/assets/js/44.a428ddbd.js"><link rel="prefetch" href="/assets/js/45.6d4d1019.js"><link rel="prefetch" href="/assets/js/46.7e0df30c.js"><link rel="prefetch" href="/assets/js/47.f43ef89c.js"><link rel="prefetch" href="/assets/js/48.f0c83a91.js"><link rel="prefetch" href="/assets/js/49.7689fff4.js"><link rel="prefetch" href="/assets/js/5.3988f2a7.js"><link rel="prefetch" href="/assets/js/50.3adc84a7.js"><link rel="prefetch" href="/assets/js/51.6f405f0e.js"><link rel="prefetch" href="/assets/js/52.8cacdf11.js"><link rel="prefetch" href="/assets/js/53.a5812d23.js"><link rel="prefetch" href="/assets/js/54.0c04368f.js"><link rel="prefetch" href="/assets/js/55.fbc6c3c7.js"><link rel="prefetch" href="/assets/js/56.7811d98a.js"><link rel="prefetch" href="/assets/js/57.31eceea4.js"><link rel="prefetch" href="/assets/js/58.ac302dd8.js"><link rel="prefetch" href="/assets/js/59.46f9fff4.js"><link rel="prefetch" href="/assets/js/6.3028bb71.js"><link rel="prefetch" href="/assets/js/60.205b17bd.js"><link rel="prefetch" href="/assets/js/61.f68e6746.js"><link rel="prefetch" href="/assets/js/62.95ddb372.js"><link rel="prefetch" href="/assets/js/63.73425831.js"><link rel="prefetch" href="/assets/js/64.da05ef5f.js"><link rel="prefetch" href="/assets/js/65.6550e3b0.js"><link rel="prefetch" href="/assets/js/66.d9ef6fa7.js"><link rel="prefetch" href="/assets/js/67.ebe75aad.js"><link rel="prefetch" href="/assets/js/68.39c19da4.js"><link rel="prefetch" href="/assets/js/69.53c7de37.js"><link rel="prefetch" href="/assets/js/7.57913225.js"><link rel="prefetch" href="/assets/js/70.7e276bbb.js"><link rel="prefetch" href="/assets/js/71.d72f9f89.js"><link rel="prefetch" href="/assets/js/72.8aaf78f1.js"><link rel="prefetch" href="/assets/js/73.d1ddf670.js"><link rel="prefetch" href="/assets/js/74.bf4e85f1.js"><link rel="prefetch" href="/assets/js/75.e9547c4f.js"><link rel="prefetch" href="/assets/js/76.c2abb8bd.js"><link rel="prefetch" href="/assets/js/77.f162bb01.js"><link rel="prefetch" href="/assets/js/78.2780caa3.js"><link rel="prefetch" href="/assets/js/79.8be5fdb6.js"><link rel="prefetch" href="/assets/js/8.0bca1ec9.js"><link rel="prefetch" href="/assets/js/81.209917c2.js"><link rel="prefetch" href="/assets/js/82.04ba13ae.js"><link rel="prefetch" href="/assets/js/83.3d55152d.js"><link rel="prefetch" href="/assets/js/84.12f53b61.js"><link rel="prefetch" href="/assets/js/85.37fb18f7.js"><link rel="prefetch" href="/assets/js/86.29a425ed.js"><link rel="prefetch" href="/assets/js/87.90b95889.js"><link rel="prefetch" href="/assets/js/88.3daecc66.js"><link rel="prefetch" href="/assets/js/89.c8e4ec1a.js"><link rel="prefetch" href="/assets/js/9.b58cbdb9.js"><link rel="prefetch" href="/assets/js/90.a0352888.js"><link rel="prefetch" href="/assets/js/91.d3d51315.js"><link rel="prefetch" href="/assets/js/92.e1861fd3.js"><link rel="prefetch" href="/assets/js/93.ca928336.js"><link rel="prefetch" href="/assets/js/94.ff60a408.js"><link rel="prefetch" href="/assets/js/95.5d1c4712.js"><link rel="prefetch" href="/assets/js/96.3be6aa08.js"><link rel="prefetch" href="/assets/js/97.b1bb574e.js"><link rel="prefetch" href="/assets/js/98.9acfeac6.js"><link rel="prefetch" href="/assets/js/99.774eb619.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c16151cb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link router-link-active">
+  面试题
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><a href="https://github.com/305810827" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="front end" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="front end" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/html/" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/js/" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><a href="/interview/" class="nav-link router-link-active">
+  面试题
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  博文
+</a></div><div class="nav-item"><a href="https://github.com/305810827" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/interview/vue/vue3开发遇到的问题.html" class="sidebar-link">vue3开发遇到的问题</a></li><li><a href="/interview/vue/vue checkbox.html" class="sidebar-link">vue checkbox</a></li><li><a href="/interview/vue/Vue的双向数据绑定.html" class="active sidebar-link">Vue的双向数据绑定</a></li><li><a href="/interview/vue/Vue 源码学习.html" class="sidebar-link">Vue 源码学习</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>netword</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Algorithms</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>other</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue的双向数据绑定"><a href="#vue的双向数据绑定" class="header-anchor">#</a> Vue的双向数据绑定</h1> <ul><li><p>Observer：观察者，这里的主要工作是递归地监听对象上的所有属性，在属性值改变的时候，触发相应的watcher。</p></li> <li><p>Watcher：订阅者，当监听的数据值修改时，执行响应的回调函数（Vue里面的更新模板内容）。</p></li> <li><p>Dep：订阅管理器，连接Observer和Watcher的桥梁，每一个Observer对应一个Dep，它内部维护一个数组，保存与该Observer相关的Watcher</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>/* 实现数据监听器（数据劫持）*/
+	function Observer(obj, key, value) {
+  		var dep = new Dep();
+  		if (Object.prototype.toString.call(value) == '[object Object]') {
+   		    Object.keys(value).forEach(function(key) {
+      		new Observer(value, key, value[key])
+    	 })
+  	 };
+
+  	Object.defineProperty(obj, key, {
+   		 enumerable: true,
+   		 configurable: true,
+    	  get: function() {
+     		 if (Dep.target) {
+        	 dep.addSub(Dep.target);
+      	     };
+      	     return value;
+          },
+    	set: function(newVal) {
+      		value = newVal;
+      		dep.notify();
+    		}
+  		})
+	}
+	
+	// 订阅器
+	function Dep() {
+  		this.subs = [];
+  		this.addSub = function (watcher) {
+    		this.subs.push(watcher);
+  		}
+
+  		this.notify = function() {
+    		this.subs.forEach(function(watcher) {
+    			watcher.update();
+    		});
+  		}
+	}
+
+	// 观察者
+   function Watcher(fn) {
+ 	 	this.update = function() {
+    		Dep.target = this;
+    		fn();
+    		Dep.target = null;
+  		}
+  		this.update();
+	}
+
+	// 连接器
+	&lt;div id=&quot;app&quot;&gt;
+  		&lt;input id=&quot;input&quot; type=&quot;text&quot; v-model=&quot;text&quot;&gt;
+  		&lt;div id=&quot;text&quot;&gt;输入的值为：{{text}}&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;script type=&quot;text/javascript&quot;&gt;
+  		var obj = {
+    		text: 'hello world'
+  		}
+  		Object.keys(obj).forEach(function(key){
+  	  		new Observer(obj, key, obj[key])
+  		});
+  		new Watcher(function(){
+    		document.querySelector(&quot;#text&quot;).innerHTML = &quot;输入的值为：&quot; + obj.text;
+  		})
+ 		 document.querySelector(&quot;#input&quot;).addEventListener('input', function(e) {
+    		obj.text = e.target.value;
+  		})
+	&lt;/script&gt;
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/interview/vue/vue checkbox.html" class="prev">
+        vue checkbox
+      </a></span> <span class="next"><a href="/interview/vue/Vue 源码学习.html">
+        Vue 源码学习
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d8d2a0bb.js" defer></script><script src="/assets/js/2.72d74e75.js" defer></script><script src="/assets/js/80.2fb0101e.js" defer></script>
+  </body>
+</html>

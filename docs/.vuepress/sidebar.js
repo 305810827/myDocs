@@ -27,7 +27,7 @@ module.exports = {
           children: readFileList('interview/js')
         }, {
           text: 'css',
-          collapsable: true,
+          collapsable: false,
           children: readFileList('interview/css')
         }, {
           text: 'vue',

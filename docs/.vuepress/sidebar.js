@@ -23,7 +23,7 @@ module.exports = {
       '/interview/': [
         {
           text: 'javascript',
-          collapsible: true,
+          collapsible: false,
           children: readFileList('interview/js')
         }, {
           text: 'css',

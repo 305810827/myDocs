@@ -25,5 +25,3 @@ mac/linux系统的hosts文件的位置如下：/etc/hosts
 ```
 ipconfig /flushdns
 ```
-
-![image-20211221222006557](C:\Users\xuyanjie\AppData\Roaming\Typora\typora-user-images\image-20211221222006557.png)

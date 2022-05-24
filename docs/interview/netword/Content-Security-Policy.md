@@ -35,14 +35,14 @@ media-src 媒体文件（音频和视频）
 font-src 字体文件
 object-src 插件（比如 Flash）
 child-src 框架
-frame-ancestors 嵌入的外部资源（比如、<iframe>、和）
+frame-ancestors 嵌入的外部资源（比如**iframe**）
 connect-src HTTP 连接（通过 XHR、WebSockets、EventSource等）
 worker-src worker脚本
 manifest-src manifest 文件
 
 **script-src有如下属性值：**
 
-unsafe-inline 允许执行页面内嵌的<script>标签和事件监听函数
+unsafe-inline 允许执行页面内嵌的script标签和事件监听函数
 unsafe-eval 允许将字符串当作代码执行，比如使用eval、setTimeout、setInterval和Function等函数
 nonce 每次HTTP回应给出一个授权token，页面内嵌脚本必须有这个token，才会执行
 hash 列出允许执行的脚本代码的Hash值，页面内嵌脚本的哈希值只有吻合的情况下，才能执行

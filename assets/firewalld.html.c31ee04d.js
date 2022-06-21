@@ -1,0 +1,1 @@
+const e={key:"v-95f0703e",path:"/guide/firewalld.html",title:"\u5B9D\u5854\u9762\u677F\u9632\u706B\u5899firewalld\u547D\u4EE4\u884C",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"guide/firewalld.md"};export{e as data};

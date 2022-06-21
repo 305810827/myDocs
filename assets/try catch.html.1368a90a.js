@@ -1,0 +1,1 @@
+const t={key:"v-007ba4a5",path:"/interview/js/try%20catch.html",title:"try catch \u80FD\u6355\u83B7\u5230\u54EA\u4E9B JS \u5F02\u5E38",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"interview/js/try catch.md"};export{t as data};

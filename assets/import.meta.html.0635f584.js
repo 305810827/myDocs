@@ -1,0 +1,1 @@
+const e={key:"v-4c7cb15e",path:"/interview/other/i\u200Bmport.meta.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:3,title:"i\u200Bmport.meta",slug:"import-meta",children:[]}],git:{updatedTime:165539127e4,contributors:[{name:"xuyanjie",email:"305810827@qq.com",commits:1}]},filePathRelative:"interview/other/i\u200Bmport.meta.md"};export{e as data};

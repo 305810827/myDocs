@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.45">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/images/logo.png"><meta name="theme-color" content="#3eaf7c"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><title>Array 对象 | 前端文档</title><meta name="description" content="">
+    <link rel="modulepreload" href="/assets/app.659fa32e.js"><link rel="modulepreload" href="/assets/array.html.2fde9d4f.js"><link rel="modulepreload" href="/assets/array.html.cfb4314b.js"><link rel="prefetch" href="/assets/index.html.a4f3bf1d.js"><link rel="prefetch" href="/assets/CSS实用新功能.html.c4773616.js"><link rel="prefetch" href="/assets/index.html.15f318d3.js"><link rel="prefetch" href="/assets/V8引擎-快属性和慢属性.html.bd4e8e7d.js"><link rel="prefetch" href="/assets/V8引擎-隐藏类.html.6c259da6.js"><link rel="prefetch" href="/assets/chrome91.html.719b2694.js"><link rel="prefetch" href="/assets/firewalld.html.c31ee04d.js"><link rel="prefetch" href="/assets/html正文提取.html.78ac32f7.js"><link rel="prefetch" href="/assets/mysql正则.html.283ba2d4.js"><link rel="prefetch" href="/assets/nginx配置.html.495845e8.js"><link rel="prefetch" href="/assets/node.html.f918cb8d.js"><link rel="prefetch" href="/assets/using-vue.html.b36ca9e0.js"><link rel="prefetch" href="/assets/v2ray配置IP代理.html.cc4803e5.js"><link rel="prefetch" href="/assets/webstorm replace.html.8fa0452d.js"><link rel="prefetch" href="/assets/字符编码.html.399c44a8.js"><link rel="prefetch" href="/assets/index.html.d765d6c0.js"><link rel="prefetch" href="/assets/appendChild.html.9b232103.js"><link rel="prefetch" href="/assets/http、https.html.48bde5f9.js"><link rel="prefetch" href="/assets/实现图片分组-面试题.html.b48d937e.js"><link rel="prefetch" href="/assets/LANG.html.57a40ac9.js"><link rel="prefetch" href="/assets/chown.html.1bf852b6.js"><link rel="prefetch" href="/assets/echo.html.68b2ed0c.js"><link rel="prefetch" href="/assets/mv.html.c3e1c00c.js"><link rel="prefetch" href="/assets/rm.html.ea9a8566.js"><link rel="prefetch" href="/assets/--unsafe-perm.html.960b4d9b.js"><link rel="prefetch" href="/assets/Chrome扩展通信.html.461fe3e1.js"><link rel="prefetch" href="/assets/Chrome扩展通信1.html.c798bbb8.js"><link rel="prefetch" href="/assets/IP地址.html.2cbcde42.js"><link rel="prefetch" href="/assets/Module.html.1f1c1464.js"><link rel="prefetch" href="/assets/index.html.0a0eac8c.js"><link rel="prefetch" href="/assets/context.html.5a5f7c1d.js"><link rel="prefetch" href="/assets/entry和output.html.ed50c63a.js"><link rel="prefetch" href="/assets/git设定不合并的文件.html.aeab1e4e.js"><link rel="prefetch" href="/assets/linux install puppeteer error.html.6f380e3d.js"><link rel="prefetch" href="/assets/load、domcontentloaded.html.49cbc153.js"><link rel="prefetch" href="/assets/plugins.html.5b13cf84.js"><link rel="prefetch" href="/assets/resolve.html.c2f17fb2.js"><link rel="prefetch" href="/assets/submodule.html.5dd2f29f.js"><link rel="prefetch" href="/assets/wanted-order.html.a9f45dae.js"><link rel="prefetch" href="/assets/使用puppeteer爬虫的总结.html.d907b918.js"><link rel="prefetch" href="/assets/提取网站正文内容.html.e6988825.js"><link rel="prefetch" href="/assets/添加dns解析缓存，加速页面访问.html.868fca70.js"><link rel="prefetch" href="/assets/违规取证项目.html.261a9af9.js"><link rel="prefetch" href="/assets/index.html.55a038b4.js"><link rel="prefetch" href="/assets/index.html.842dddf8.js"><link rel="prefetch" href="/assets/JavaScript 引擎.html.bbf10bbd.js"><link rel="prefetch" href="/assets/index.html.f9e81ee6.js"><link rel="prefetch" href="/assets/date.html.724ccf83.js"><link rel="prefetch" href="/assets/map.html.c627f520.js"><link rel="prefetch" href="/assets/math.html.68aea85e.js"><link rel="prefetch" href="/assets/object.html.065502ad.js"><link rel="prefetch" href="/assets/reflect.html.5bedb704.js"><link rel="prefetch" href="/assets/set.html.a50114b2.js"><link rel="prefetch" href="/assets/动态规划.html.b4dda9ff.js"><link rel="prefetch" href="/assets/只出现一次的数字.html.94778fe0.js"><link rel="prefetch" href="/assets/快排、直排、冒泡.html.05dfee86.js"><link rel="prefetch" href="/assets/排序算法.html.767dcaf7.js"><link rel="prefetch" href="/assets/算法模版.html.b6bc1d12.js"><link rel="prefetch" href="/assets/BFC.html.e6ea10b8.js"><link rel="prefetch" href="/assets/css特性.html.2904570c.js"><link rel="prefetch" href="/assets/css盒子模型.html.5e1eca32.js"><link rel="prefetch" href="/assets/em、rem.html.3e60e759.js"><link rel="prefetch" href="/assets/flex.html.0d103451.js"><link rel="prefetch" href="/assets/grid、flex差异.html.1161b26e.js"><link rel="prefetch" href="/assets/html5、css3.html.b88f4ad9.js"><link rel="prefetch" href="/assets/margin合并、坍塌.html.5917fd51.js"><link rel="prefetch" href="/assets/垂直水平居中的几种实现方式.html.6e87050e.js"><link rel="prefetch" href="/assets/Array.prototype.map().html.9d9bdc94.js"><link rel="prefetch" href="/assets/Array___与Array.length_0.html.b5f7b1cb.js"><link rel="prefetch" href="/assets/Cookie属性.html.e8ca080d.js"><link rel="prefetch" href="/assets/Map、WeakMap.html.194d9ca5.js"><link rel="prefetch" href="/assets/call、apply、bind.html.36c36540.js"><link rel="prefetch" href="/assets/event bus.html.0e37fb93.js"><link rel="prefetch" href="/assets/js作用域.html.6a7b53b9.js"><link rel="prefetch" href="/assets/js的几种继承方法.html.47c3b45f.js"><link rel="prefetch" href="/assets/js设计模式之观察者模式.html.e0aa1a01.js"><link rel="prefetch" href="/assets/new运算符.html.7e65a14c.js"><link rel="prefetch" href="/assets/repeat.html.d321bd19.js"><link rel="prefetch" href="/assets/this.html.118d9725.js"><link rel="prefetch" href="/assets/this指向-题.html.a6940bdc.js"><link rel="prefetch" href="/assets/try catch.html.1368a90a.js"><link rel="prefetch" href="/assets/一道promise面试题.html.18ee318d.js"><link rel="prefetch" href="/assets/原型和原型链.html.116aca6e.js"><link rel="prefetch" href="/assets/同名变量、同名函数.html.d8616ae0.js"><link rel="prefetch" href="/assets/手写promise.html.95ad5d9a.js"><link rel="prefetch" href="/assets/构造函数与class实现类的区别.html.c9829682.js"><link rel="prefetch" href="/assets/箭头函数.html.5e9a1a2a.js"><link rel="prefetch" href="/assets/重绘和回流.html.1d1c397f.js"><link rel="prefetch" href="/assets/闭包.html.a9869350.js"><link rel="prefetch" href="/assets/Content-Security-Policy.html.2667fa04.js"><link rel="prefetch" href="/assets/Cross-Site-Request-Forgery.html.43aa4b06.js"><link rel="prefetch" href="/assets/Cross-Site-Scripting攻击.html.875ac3f2.js"><link rel="prefetch" href="/assets/HttpOnly.html.4186bfd3.js"><link rel="prefetch" href="/assets/TCP、UDP.html.c6b4d629.js"><link rel="prefetch" href="/assets/http request process.html.edd8d206.js"><link rel="prefetch" href="/assets/http1.0、http1.1、http2.0.html.d40547fb.js"><link rel="prefetch" href="/assets/https.html.c6bbb414.js"><link rel="prefetch" href="/assets/http缓存.html.5e0b60f3.js"><link rel="prefetch" href="/assets/跨域请求如何携带cookie.html.9cf64ef1.js"><link rel="prefetch" href="/assets/跨域问题.html.8dbea213.js"><link rel="prefetch" href="/assets/页面是怎么来的.html.bec2c28d.js"><link rel="prefetch" href="/assets/ES6.html.a91a5546.js"><link rel="prefetch" href="/assets/es11.html.0ab86c86.js"><link rel="prefetch" href="/assets/git常用指令.html.68fe2030.js"><link rel="prefetch" href="/assets/import.meta.html.0635f584.js"><link rel="prefetch" href="/assets/js的浅拷贝和深拷贝.html.d0237ebd.js"><link rel="prefetch" href="/assets/nginx.html.da6578fd.js"><link rel="prefetch" href="/assets/ssr服务器渲染.html.bfe6989a.js"><link rel="prefetch" href="/assets/v8垃圾回收机制20210825.html.1234c099.js"><link rel="prefetch" href="/assets/单页面应用的首屏加载优化.html.e115494e.js"><link rel="prefetch" href="/assets/编译性语言和解释性语言.html.b4b5e0e5.js"><link rel="prefetch" href="/assets/防抖节流.html.843c3ba2.js"><link rel="prefetch" href="/assets/项目中遇到的问题.html.553cc420.js"><link rel="prefetch" href="/assets/index.html.1395df8a.js"><link rel="prefetch" href="/assets/Vue 源码学习.html.a9fa327f.js"><link rel="prefetch" href="/assets/Vue的双向数据绑定.html.e7d024d8.js"><link rel="prefetch" href="/assets/data和props.html.2cdc6d42.js"><link rel="prefetch" href="/assets/diff算法.html.79356f38.js"><link rel="prefetch" href="/assets/hooks.html.662edbd3.js"><link rel="prefetch" href="/assets/nextTick.html.acaa8166.js"><link rel="prefetch" href="/assets/react和vue区别.html.00f31018.js"><link rel="prefetch" href="/assets/reflect.html.cda48e8b.js"><link rel="prefetch" href="/assets/v-if、v-for.html.2a7f1051.js"><link rel="prefetch" href="/assets/vue checkbox.html.14e127fb.js"><link rel="prefetch" href="/assets/vue2、vue3.html.cac58c7a.js"><link rel="prefetch" href="/assets/vue3开发遇到的问题.html.8f514ef7.js"><link rel="prefetch" href="/assets/vuex.html.88965bcc.js"><link rel="prefetch" href="/assets/vue数据响应式处理.html.35cc3fef.js"><link rel="prefetch" href="/assets/vue生命周期.html.f4752d5a.js"><link rel="prefetch" href="/assets/vue的双向绑定.html.a1021f21.js"><link rel="prefetch" href="/assets/vue组件扩展.html.cf315fa3.js"><link rel="prefetch" href="/assets/vue组件间通信.html.92250150.js"><link rel="prefetch" href="/assets/404.html.f166316b.js"><link rel="prefetch" href="/assets/index.html.313eb59d.js"><link rel="prefetch" href="/assets/CSS实用新功能.html.5ee01545.js"><link rel="prefetch" href="/assets/index.html.774f5514.js"><link rel="prefetch" href="/assets/V8引擎-快属性和慢属性.html.436677d5.js"><link rel="prefetch" href="/assets/V8引擎-隐藏类.html.fd7bb091.js"><link rel="prefetch" href="/assets/chrome91.html.edd30c0b.js"><link rel="prefetch" href="/assets/firewalld.html.93f5ce01.js"><link rel="prefetch" href="/assets/html正文提取.html.41fa9778.js"><link rel="prefetch" href="/assets/mysql正则.html.e070d2d2.js"><link rel="prefetch" href="/assets/nginx配置.html.a04cfb03.js"><link rel="prefetch" href="/assets/node.html.3e8074c4.js"><link rel="prefetch" href="/assets/using-vue.html.2f495b15.js"><link rel="prefetch" href="/assets/v2ray配置IP代理.html.77fa4ed0.js"><link rel="prefetch" href="/assets/webstorm replace.html.97f4c401.js"><link rel="prefetch" href="/assets/字符编码.html.b72a4a3d.js"><link rel="prefetch" href="/assets/index.html.1283bad6.js"><link rel="prefetch" href="/assets/appendChild.html.cea91c3d.js"><link rel="prefetch" href="/assets/http、https.html.ed8d6864.js"><link rel="prefetch" href="/assets/实现图片分组-面试题.html.b78cef04.js"><link rel="prefetch" href="/assets/LANG.html.2b31ee25.js"><link rel="prefetch" href="/assets/chown.html.e4586557.js"><link rel="prefetch" href="/assets/echo.html.b9b50067.js"><link rel="prefetch" href="/assets/mv.html.000f5789.js"><link rel="prefetch" href="/assets/rm.html.d77f644e.js"><link rel="prefetch" href="/assets/--unsafe-perm.html.46bf5590.js"><link rel="prefetch" href="/assets/Chrome扩展通信.html.c13bbb64.js"><link rel="prefetch" href="/assets/Chrome扩展通信1.html.dea426f3.js"><link rel="prefetch" href="/assets/IP地址.html.8bdedfc9.js"><link rel="prefetch" href="/assets/Module.html.804c941d.js"><link rel="prefetch" href="/assets/index.html.002cfeb5.js"><link rel="prefetch" href="/assets/context.html.86fd02e0.js"><link rel="prefetch" href="/assets/entry和output.html.336bb50a.js"><link rel="prefetch" href="/assets/git设定不合并的文件.html.955a034e.js"><link rel="prefetch" href="/assets/linux install puppeteer error.html.6d9bde71.js"><link rel="prefetch" href="/assets/load、domcontentloaded.html.de63ace8.js"><link rel="prefetch" href="/assets/plugins.html.09854d21.js"><link rel="prefetch" href="/assets/resolve.html.abcaecce.js"><link rel="prefetch" href="/assets/submodule.html.5d969f16.js"><link rel="prefetch" href="/assets/wanted-order.html.7f35a044.js"><link rel="prefetch" href="/assets/使用puppeteer爬虫的总结.html.9211f3d1.js"><link rel="prefetch" href="/assets/提取网站正文内容.html.d8e573a5.js"><link rel="prefetch" href="/assets/添加dns解析缓存，加速页面访问.html.72e24a54.js"><link rel="prefetch" href="/assets/违规取证项目.html.78c2bf2f.js"><link rel="prefetch" href="/assets/index.html.0a207c2f.js"><link rel="prefetch" href="/assets/index.html.b73d8108.js"><link rel="prefetch" href="/assets/JavaScript 引擎.html.07bf241f.js"><link rel="prefetch" href="/assets/index.html.5f5c0c1a.js"><link rel="prefetch" href="/assets/date.html.dd2575eb.js"><link rel="prefetch" href="/assets/map.html.7e3b94f1.js"><link rel="prefetch" href="/assets/math.html.33187b1c.js"><link rel="prefetch" href="/assets/object.html.d8107266.js"><link rel="prefetch" href="/assets/reflect.html.3f0aa010.js"><link rel="prefetch" href="/assets/set.html.66b9f919.js"><link rel="prefetch" href="/assets/动态规划.html.79206b80.js"><link rel="prefetch" href="/assets/只出现一次的数字.html.ff593f92.js"><link rel="prefetch" href="/assets/快排、直排、冒泡.html.155fbc54.js"><link rel="prefetch" href="/assets/排序算法.html.c24e203e.js"><link rel="prefetch" href="/assets/算法模版.html.58915c03.js"><link rel="prefetch" href="/assets/BFC.html.d82c5d11.js"><link rel="prefetch" href="/assets/css特性.html.7fb18b12.js"><link rel="prefetch" href="/assets/css盒子模型.html.d7e15a5c.js"><link rel="prefetch" href="/assets/em、rem.html.148393fa.js"><link rel="prefetch" href="/assets/flex.html.c28dcf6b.js"><link rel="prefetch" href="/assets/grid、flex差异.html.9d858732.js"><link rel="prefetch" href="/assets/html5、css3.html.6f2c18c2.js"><link rel="prefetch" href="/assets/margin合并、坍塌.html.a29886e6.js"><link rel="prefetch" href="/assets/垂直水平居中的几种实现方式.html.9cd54889.js"><link rel="prefetch" href="/assets/Array.prototype.map().html.58649b40.js"><link rel="prefetch" href="/assets/Array___与Array.length_0.html.bbf7f2f8.js"><link rel="prefetch" href="/assets/Cookie属性.html.15abe045.js"><link rel="prefetch" href="/assets/Map、WeakMap.html.f018c66e.js"><link rel="prefetch" href="/assets/call、apply、bind.html.735421ca.js"><link rel="prefetch" href="/assets/event bus.html.dbe4f699.js"><link rel="prefetch" href="/assets/js作用域.html.c6ee1e40.js"><link rel="prefetch" href="/assets/js的几种继承方法.html.962e6cff.js"><link rel="prefetch" href="/assets/js设计模式之观察者模式.html.b34e1a5f.js"><link rel="prefetch" href="/assets/new运算符.html.5e60acc0.js"><link rel="prefetch" href="/assets/repeat.html.754eb878.js"><link rel="prefetch" href="/assets/this.html.d22bbc86.js"><link rel="prefetch" href="/assets/this指向-题.html.32a455ac.js"><link rel="prefetch" href="/assets/try catch.html.939c185f.js"><link rel="prefetch" href="/assets/一道promise面试题.html.135827ac.js"><link rel="prefetch" href="/assets/原型和原型链.html.3ee046ba.js"><link rel="prefetch" href="/assets/同名变量、同名函数.html.df811dbb.js"><link rel="prefetch" href="/assets/手写promise.html.4ce336bd.js"><link rel="prefetch" href="/assets/构造函数与class实现类的区别.html.c6df75fc.js"><link rel="prefetch" href="/assets/箭头函数.html.c131ec96.js"><link rel="prefetch" href="/assets/重绘和回流.html.53cf9eae.js"><link rel="prefetch" href="/assets/闭包.html.5581e461.js"><link rel="prefetch" href="/assets/Content-Security-Policy.html.7fc36510.js"><link rel="prefetch" href="/assets/Cross-Site-Request-Forgery.html.6eabafea.js"><link rel="prefetch" href="/assets/Cross-Site-Scripting攻击.html.9d83b3b1.js"><link rel="prefetch" href="/assets/HttpOnly.html.bb41ef4d.js"><link rel="prefetch" href="/assets/TCP、UDP.html.646bd5e6.js"><link rel="prefetch" href="/assets/http request process.html.b5ddbd30.js"><link rel="prefetch" href="/assets/http1.0、http1.1、http2.0.html.c2907461.js"><link rel="prefetch" href="/assets/https.html.367b57dd.js"><link rel="prefetch" href="/assets/http缓存.html.75904b14.js"><link rel="prefetch" href="/assets/跨域请求如何携带cookie.html.b40a0e12.js"><link rel="prefetch" href="/assets/跨域问题.html.cfb08c02.js"><link rel="prefetch" href="/assets/页面是怎么来的.html.3885d238.js"><link rel="prefetch" href="/assets/ES6.html.a447e865.js"><link rel="prefetch" href="/assets/es11.html.9cf4f30d.js"><link rel="prefetch" href="/assets/git常用指令.html.ceef8ebd.js"><link rel="prefetch" href="/assets/import.meta.html.71e5b731.js"><link rel="prefetch" href="/assets/js的浅拷贝和深拷贝.html.e0f122b9.js"><link rel="prefetch" href="/assets/nginx.html.caaa71ca.js"><link rel="prefetch" href="/assets/ssr服务器渲染.html.57054e70.js"><link rel="prefetch" href="/assets/v8垃圾回收机制20210825.html.f12bc7c4.js"><link rel="prefetch" href="/assets/单页面应用的首屏加载优化.html.a773b2c5.js"><link rel="prefetch" href="/assets/编译性语言和解释性语言.html.7c47e1b1.js"><link rel="prefetch" href="/assets/防抖节流.html.8c6b7b38.js"><link rel="prefetch" href="/assets/项目中遇到的问题.html.902b5e95.js"><link rel="prefetch" href="/assets/index.html.cae4ba3f.js"><link rel="prefetch" href="/assets/Vue 源码学习.html.4fe06cd5.js"><link rel="prefetch" href="/assets/Vue的双向数据绑定.html.c493c858.js"><link rel="prefetch" href="/assets/data和props.html.8f8140c4.js"><link rel="prefetch" href="/assets/diff算法.html.14b096b0.js"><link rel="prefetch" href="/assets/hooks.html.66fd3be6.js"><link rel="prefetch" href="/assets/nextTick.html.10c0f47f.js"><link rel="prefetch" href="/assets/react和vue区别.html.473bb01d.js"><link rel="prefetch" href="/assets/reflect.html.f8521521.js"><link rel="prefetch" href="/assets/v-if、v-for.html.50d6a3e6.js"><link rel="prefetch" href="/assets/vue checkbox.html.a4fb8aca.js"><link rel="prefetch" href="/assets/vue2、vue3.html.46aabb15.js"><link rel="prefetch" href="/assets/vue3开发遇到的问题.html.690b28dd.js"><link rel="prefetch" href="/assets/vuex.html.02df2582.js"><link rel="prefetch" href="/assets/vue数据响应式处理.html.29d8153b.js"><link rel="prefetch" href="/assets/vue生命周期.html.1b1321af.js"><link rel="prefetch" href="/assets/vue的双向绑定.html.324237d8.js"><link rel="prefetch" href="/assets/vue组件扩展.html.fea67573.js"><link rel="prefetch" href="/assets/vue组件间通信.html.8695a578.js"><link rel="prefetch" href="/assets/404.html.136fec67.js"><link rel="prefetch" href="/assets/404.70399e78.js"><link rel="prefetch" href="/assets/Layout.9c86b2df.js">
+    <link rel="stylesheet" href="/assets/style.e04b053e.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><img class="logo" src="/images/logo.png" alt="前端文档"><span class="site-name can-hide">前端文档</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="front end"><span class="title">前端</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="front end"><span class="title">前端</span><span class="right arrow"></span></button><!--[--><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/frontend/html/" class="" aria-label="html"><!--[--><!--]--> html <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/frontend/css/" class="" aria-label="css"><!--[--><!--]--> css <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/frontend/js/" class="router-link-active" aria-label="js"><!--[--><!--]--> js <!--[--><!--]--></a></li><!--]--></ul><!--]--></div></div><div class="navbar-item"><a href="/interview/" class="" aria-label="面试题"><!--[--><!--]--> 面试题 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/linux/" class="" aria-label="linux"><!--[--><!--]--> linux <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/305810827" rel="noopener noreferrer" target="_blank" aria-label="github"><!--[--><!--]--> github <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><div class="navbar-dropdown-wrapper"><button class="navbar-dropdown-title" type="button" aria-label="front end"><span class="title">前端</span><span class="arrow down"></span></button><button class="navbar-dropdown-title-mobile" type="button" aria-label="front end"><span class="title">前端</span><span class="right arrow"></span></button><!--[--><ul style="display:none;" class="navbar-dropdown"><!--[--><li class="navbar-dropdown-item"><a href="/frontend/html/" class="" aria-label="html"><!--[--><!--]--> html <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/frontend/css/" class="" aria-label="css"><!--[--><!--]--> css <!--[--><!--]--></a></li><li class="navbar-dropdown-item"><a href="/frontend/js/" class="router-link-active" aria-label="js"><!--[--><!--]--> js <!--[--><!--]--></a></li><!--]--></ul><!--]--></div></div><div class="navbar-item"><a href="/interview/" class="" aria-label="面试题"><!--[--><!--]--> 面试题 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/linux/" class="" aria-label="linux"><!--[--><!--]--> linux <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/305810827" rel="noopener noreferrer" target="_blank" aria-label="github"><!--[--><!--]--> github <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><a aria-current="page" href="/frontend/js/array.html" class="router-link-active router-link-exact-active router-link-active sidebar-item sidebar-heading active" aria-label="Array 对象"><!--[--><!--]--> Array 对象 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/frontend/js/array.html#静态方法" class="router-link-active router-link-exact-active sidebar-item" aria-label="静态方法"><!--[--><!--]--> 静态方法 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/frontend/js/array.html#array-isarray" class="router-link-active router-link-exact-active sidebar-item" aria-label="Array.isArray()"><!--[--><!--]--> Array.isArray() <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/frontend/js/array.html#实例方法" class="router-link-active router-link-exact-active sidebar-item" aria-label="实例方法"><!--[--><!--]--> 实例方法 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/frontend/js/array.html#valueof-tostring" class="router-link-active router-link-exact-active sidebar-item" aria-label="valueOf()，toString()"><!--[--><!--]--> valueOf()，toString() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#push-pop" class="router-link-active router-link-exact-active sidebar-item" aria-label="push()，pop()"><!--[--><!--]--> push()，pop() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#shift-unshift" class="router-link-active router-link-exact-active sidebar-item" aria-label="shift()，unshift()"><!--[--><!--]--> shift()，unshift() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#join" class="router-link-active router-link-exact-active sidebar-item" aria-label="join()"><!--[--><!--]--> join() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#concat" class="router-link-active router-link-exact-active sidebar-item" aria-label="concat()"><!--[--><!--]--> concat() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#reverse" class="router-link-active router-link-exact-active sidebar-item" aria-label="reverse()"><!--[--><!--]--> reverse() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#slice" class="router-link-active router-link-exact-active sidebar-item" aria-label="slice()"><!--[--><!--]--> slice() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#splice" class="router-link-active router-link-exact-active sidebar-item" aria-label="splice()"><!--[--><!--]--> splice() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#sort" class="router-link-active router-link-exact-active sidebar-item" aria-label="sort()"><!--[--><!--]--> sort() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#map" class="router-link-active router-link-exact-active sidebar-item" aria-label="map()"><!--[--><!--]--> map() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#foreach" class="router-link-active router-link-exact-active sidebar-item" aria-label="forEach()"><!--[--><!--]--> forEach() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#filter" class="router-link-active router-link-exact-active sidebar-item" aria-label="filter()"><!--[--><!--]--> filter() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#some-every" class="router-link-active router-link-exact-active sidebar-item" aria-label="some()，every()"><!--[--><!--]--> some()，every() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#reduce-reduceright" class="router-link-active router-link-exact-active sidebar-item" aria-label="reduce()，reduceRight()"><!--[--><!--]--> reduce()，reduceRight() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#indexof-lastindexof" class="router-link-active router-link-exact-active sidebar-item" aria-label="indexOf()，lastIndexOf()"><!--[--><!--]--> indexOf()，lastIndexOf() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#链式使用" class="router-link-active router-link-exact-active sidebar-item" aria-label="链式使用"><!--[--><!--]--> 链式使用 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/frontend/js/array.html#参考链接" class="router-link-active router-link-exact-active sidebar-item" aria-label="参考链接"><!--[--><!--]--> 参考链接 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/frontend/js/array.html" class="router-link-active router-link-exact-active router-link-active sidebar-item sidebar-heading active" aria-label="Array 对象"><!--[--><!--]--> Array 对象 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/frontend/js/array.html#静态方法" class="router-link-active router-link-exact-active sidebar-item" aria-label="静态方法"><!--[--><!--]--> 静态方法 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/frontend/js/array.html#array-isarray" class="router-link-active router-link-exact-active sidebar-item" aria-label="Array.isArray()"><!--[--><!--]--> Array.isArray() <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/frontend/js/array.html#实例方法" class="router-link-active router-link-exact-active sidebar-item" aria-label="实例方法"><!--[--><!--]--> 实例方法 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/frontend/js/array.html#valueof-tostring" class="router-link-active router-link-exact-active sidebar-item" aria-label="valueOf()，toString()"><!--[--><!--]--> valueOf()，toString() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#push-pop" class="router-link-active router-link-exact-active sidebar-item" aria-label="push()，pop()"><!--[--><!--]--> push()，pop() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#shift-unshift" class="router-link-active router-link-exact-active sidebar-item" aria-label="shift()，unshift()"><!--[--><!--]--> shift()，unshift() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#join" class="router-link-active router-link-exact-active sidebar-item" aria-label="join()"><!--[--><!--]--> join() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#concat" class="router-link-active router-link-exact-active sidebar-item" aria-label="concat()"><!--[--><!--]--> concat() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#reverse" class="router-link-active router-link-exact-active sidebar-item" aria-label="reverse()"><!--[--><!--]--> reverse() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#slice" class="router-link-active router-link-exact-active sidebar-item" aria-label="slice()"><!--[--><!--]--> slice() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#splice" class="router-link-active router-link-exact-active sidebar-item" aria-label="splice()"><!--[--><!--]--> splice() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#sort" class="router-link-active router-link-exact-active sidebar-item" aria-label="sort()"><!--[--><!--]--> sort() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#map" class="router-link-active router-link-exact-active sidebar-item" aria-label="map()"><!--[--><!--]--> map() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#foreach" class="router-link-active router-link-exact-active sidebar-item" aria-label="forEach()"><!--[--><!--]--> forEach() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#filter" class="router-link-active router-link-exact-active sidebar-item" aria-label="filter()"><!--[--><!--]--> filter() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#some-every" class="router-link-active router-link-exact-active sidebar-item" aria-label="some()，every()"><!--[--><!--]--> some()，every() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#reduce-reduceright" class="router-link-active router-link-exact-active sidebar-item" aria-label="reduce()，reduceRight()"><!--[--><!--]--> reduce()，reduceRight() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#indexof-lastindexof" class="router-link-active router-link-exact-active sidebar-item" aria-label="indexOf()，lastIndexOf()"><!--[--><!--]--> indexOf()，lastIndexOf() <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/frontend/js/array.html#链式使用" class="router-link-active router-link-exact-active sidebar-item" aria-label="链式使用"><!--[--><!--]--> 链式使用 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/frontend/js/array.html#参考链接" class="router-link-active router-link-exact-active sidebar-item" aria-label="参考链接"><!--[--><!--]--> 参考链接 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a href="/frontend/js/object.html" class="sidebar-item sidebar-heading" aria-label="Object 对象"><!--[--><!--]--> Object 对象 <!--[--><!--]--></a><!----></li><li><a href="/frontend/js/math.html" class="sidebar-item sidebar-heading" aria-label="Math 对象"><!--[--><!--]--> Math 对象 <!--[--><!--]--></a><!----></li><li><a href="/frontend/js/date.html" class="sidebar-item sidebar-heading" aria-label="Date 对象"><!--[--><!--]--> Date 对象 <!--[--><!--]--></a><!----></li><li><a href="/frontend/js/set.html" class="sidebar-item sidebar-heading" aria-label="Set 对象"><!--[--><!--]--> Set 对象 <!--[--><!--]--></a><!----></li><li><a href="/frontend/js/map.html" class="sidebar-item sidebar-heading" aria-label="Map 对象"><!--[--><!--]--> Map 对象 <!--[--><!--]--></a><!----></li><li><a href="/frontend/js/reflect.html" class="sidebar-item sidebar-heading" aria-label="Reflect 对象"><!--[--><!--]--> Reflect 对象 <!--[--><!--]--></a><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="array-对象" tabindex="-1"><a class="header-anchor" href="#array-对象" aria-hidden="true">#</a> Array 对象</h1><p><code>Array</code>是 JavaScript 的原生对象，同时也是一个构造函数，可以用它生成新的数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = new Array(2);
+arr.length // 2
+arr // [ empty x 2 ]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>Array()</code>构造函数的参数<code>2</code>，表示生成一个两个成员的数组，每个位置都是空值。</p><p>如果没有使用<code>new</code>关键字，运行结果也是一样的。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = Array(2);
+// 等同于
+var arr = new Array(2);
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>考虑到语义性，以及与其他构造函数用法保持一致，建议总是加上<code>new</code>。</p><p><code>Array()</code>构造函数有一个很大的缺陷，不同的参数个数会导致不一致的行为。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>// 无参数时，返回一个空数组
+new Array() // []
+
+// 单个正整数参数，表示返回的新数组的长度
+new Array(1) // [ empty ]
+new Array(2) // [ empty x 2 ]
+
+// 非正整数的数值作为参数，会报错
+new Array(3.2) // RangeError: Invalid array length
+new Array(-3) // RangeError: Invalid array length
+
+// 单个非数值（比如字符串、布尔值、对象等）作为参数，
+// 则该参数是返回的新数组的成员
+new Array(&#39;abc&#39;) // [&#39;abc&#39;]
+new Array([1]) // [Array[1]]
+
+// 多参数时，所有参数都是返回的新数组的成员
+new Array(1, 2) // [1, 2]
+new Array(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;) // [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可以看到，<code>Array()</code>作为构造函数，行为很不一致。因此，不建议使用它生成新数组，直接使用数组字面量是更好的做法。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>// bad
+var arr = new Array(1, 2);
+
+// good
+var arr = [1, 2];
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>注意，如果参数是一个正整数，返回数组的成员都是空位。虽然读取的时候返回<code>undefined</code>，但实际上该位置没有任何值。虽然这时可以读取到<code>length</code>属性，但是取不到键名。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = new Array(3);
+var b = [undefined, undefined, undefined];
+
+a.length // 3
+b.length // 3
+
+a[0] // undefined
+b[0] // undefined
+
+0 in a // false
+0 in b // true
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>a</code>是<code>Array()</code>生成的一个长度为3的空数组，<code>b</code>是一个三个成员都是<code>undefined</code>的数组，这两个数组是不一样的。读取键值的时候，<code>a</code>和<code>b</code>都返回<code>undefined</code>，但是<code>a</code>的键名（成员的序号）都是空的，<code>b</code>的键名是有值的。</p><h2 id="静态方法" tabindex="-1"><a class="header-anchor" href="#静态方法" aria-hidden="true">#</a> 静态方法</h2><h3 id="array-isarray" tabindex="-1"><a class="header-anchor" href="#array-isarray" aria-hidden="true">#</a> Array.isArray()</h3><p><code>Array.isArray</code>方法返回一个布尔值，表示参数是否为数组。它可以弥补<code>typeof</code>运算符的不足。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3];
+
+typeof arr // &quot;object&quot;
+Array.isArray(arr) // true
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>typeof</code>运算符只能显示数组的类型是<code>Object</code>，而<code>Array.isArray</code>方法可以识别数组。</p><h2 id="实例方法" tabindex="-1"><a class="header-anchor" href="#实例方法" aria-hidden="true">#</a> 实例方法</h2><h3 id="valueof-tostring" tabindex="-1"><a class="header-anchor" href="#valueof-tostring" aria-hidden="true">#</a> valueOf()，toString()</h3><p><code>valueOf</code>方法是一个所有对象都拥有的方法，表示对该对象求值。不同对象的<code>valueOf</code>方法不尽一致，数组的<code>valueOf</code>方法返回数组本身。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3];
+arr.valueOf() // [1, 2, 3]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><code>toString</code>方法也是对象的通用方法，数组的<code>toString</code>方法返回数组的字符串形式。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3];
+arr.toString() // &quot;1,2,3&quot;
+
+var arr = [1, 2, 3, [4, 5, 6]];
+arr.toString() // &quot;1,2,3,4,5,6&quot;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="push-pop" tabindex="-1"><a class="header-anchor" href="#push-pop" aria-hidden="true">#</a> push()，pop()</h3><p><code>push</code>方法用于在数组的末端添加一个或多个元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [];
+
+arr.push(1) // 1
+arr.push(&#39;a&#39;) // 2
+arr.push(true, {}) // 4
+arr // [1, &#39;a&#39;, true, {}]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码使用<code>push</code>方法，往数组中添加了四个成员。</p><p><code>pop</code>方法用于删除数组的最后一个元素，并返回该元素。注意，该方法会改变原数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+
+arr.pop() // &#39;c&#39;
+arr // [&#39;a&#39;, &#39;b&#39;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>对空数组使用<code>pop</code>方法，不会报错，而是返回<code>undefined</code>。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[].pop() // undefined
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code>push</code>和<code>pop</code>结合使用，就构成了“后进先出”的栈结构（stack）。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [];
+arr.push(1, 2);
+arr.push(3);
+arr.pop();
+arr // [1, 2]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>3</code>是最后进入数组的，但是最早离开数组。</p><h3 id="shift-unshift" tabindex="-1"><a class="header-anchor" href="#shift-unshift" aria-hidden="true">#</a> shift()，unshift()</h3><p><code>shift()</code>方法用于删除数组的第一个元素，并返回该元素。注意，该方法会改变原数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+
+a.shift() // &#39;a&#39;
+a // [&#39;b&#39;, &#39;c&#39;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，使用<code>shift()</code>方法以后，原数组就变了。</p><p><code>shift()</code>方法可以遍历并清空一个数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var list = [1, 2, 3, 4];
+var item;
+
+while (item = list.shift()) {
+  console.log(item);
+}
+
+list // []
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码通过<code>list.shift()</code>方法每次取出一个元素，从而遍历数组。它的前提是数组元素不能是<code>0</code>或任何布尔值等于<code>false</code>的元素，因此这样的遍历不是很可靠。</p><p><code>push()</code>和<code>shift()</code>结合使用，就构成了“先进先出”的队列结构（queue）。</p><p><code>unshift()</code>方法用于在数组的第一个位置添加元素，并返回添加新元素后的数组长度。注意，该方法会改变原数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+
+a.unshift(&#39;x&#39;); // 4
+a // [&#39;x&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>unshift()</code>方法可以接受多个参数，这些参数都会添加到目标数组头部。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [ &#39;c&#39;, &#39;d&#39; ];
+arr.unshift(&#39;a&#39;, &#39;b&#39;) // 4
+arr // [ &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39; ]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="join" tabindex="-1"><a class="header-anchor" href="#join" aria-hidden="true">#</a> join()</h3><p><code>join()</code>方法以指定参数作为分隔符，将所有数组成员连接为一个字符串返回。如果不提供参数，默认用逗号分隔。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [1, 2, 3, 4];
+
+a.join(&#39; &#39;) // &#39;1 2 3 4&#39;
+a.join(&#39; | &#39;) // &quot;1 | 2 | 3 | 4&quot;
+a.join() // &quot;1,2,3,4&quot;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果数组成员是<code>undefined</code>或<code>null</code>或空位，会被转成空字符串。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[undefined, null].join(&#39;#&#39;)
+// &#39;#&#39;
+
+[&#39;a&#39;,, &#39;b&#39;].join(&#39;-&#39;)
+// &#39;a--b&#39;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>通过<code>call</code>方法，这个方法也可以用于字符串或类似数组的对象。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>Array.prototype.join.call(&#39;hello&#39;, &#39;-&#39;)
+// &quot;h-e-l-l-o&quot;
+
+var obj = { 0: &#39;a&#39;, 1: &#39;b&#39;, length: 2 };
+Array.prototype.join.call(obj, &#39;-&#39;)
+// &#39;a-b&#39;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="concat" tabindex="-1"><a class="header-anchor" href="#concat" aria-hidden="true">#</a> concat()</h3><p><code>concat</code>方法用于多个数组的合并。它将新数组的成员，添加到原数组成员的后部，然后返回一个新数组，原数组不变。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[&#39;hello&#39;].concat([&#39;world&#39;])
+// [&quot;hello&quot;, &quot;world&quot;]
+
+[&#39;hello&#39;].concat([&#39;world&#39;], [&#39;!&#39;])
+// [&quot;hello&quot;, &quot;world&quot;, &quot;!&quot;]
+
+[].concat({a: 1}, {b: 2})
+// [{ a: 1 }, { b: 2 }]
+
+[2].concat({a: 1})
+// [2, {a: 1}]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>除了数组作为参数，<code>concat</code>也接受其他类型的值作为参数，添加到目标数组尾部。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[1, 2, 3].concat(4, 5, 6)
+// [1, 2, 3, 4, 5, 6]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>如果数组成员包括对象，<code>concat</code>方法返回当前数组的一个浅拷贝。所谓“浅拷贝”，指的是新数组拷贝的是对象的引用。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var obj = { a: 1 };
+var oldArray = [obj];
+
+var newArray = oldArray.concat();
+
+obj.a = 2;
+newArray[0].a // 2
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，原数组包含一个对象，<code>concat</code>方法生成的新数组包含这个对象的引用。所以，改变原对象以后，新数组跟着改变。</p><h3 id="reverse" tabindex="-1"><a class="header-anchor" href="#reverse" aria-hidden="true">#</a> reverse()</h3><p><code>reverse</code>方法用于颠倒排列数组元素，返回改变后的数组。注意，该方法将改变原数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+
+a.reverse() // [&quot;c&quot;, &quot;b&quot;, &quot;a&quot;]
+a // [&quot;c&quot;, &quot;b&quot;, &quot;a&quot;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="slice" tabindex="-1"><a class="header-anchor" href="#slice" aria-hidden="true">#</a> slice()</h3><p><code>slice()</code>方法用于提取目标数组的一部分，返回一个新数组，原数组不变。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>arr.slice(start, end);
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>它的第一个参数为起始位置（从0开始，会包括在返回的新数组之中），第二个参数为终止位置（但该位置的元素本身不包括在内）。如果省略第二个参数，则一直返回到原数组的最后一个成员。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+
+a.slice(0) // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+a.slice(1) // [&quot;b&quot;, &quot;c&quot;]
+a.slice(1, 2) // [&quot;b&quot;]
+a.slice(2, 6) // [&quot;c&quot;]
+a.slice() // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，最后一个例子<code>slice()</code>没有参数，实际上等于返回一个原数组的拷贝。</p><p>如果<code>slice()</code>方法的参数是负数，则表示倒数计算的位置。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+a.slice(-2) // [&quot;b&quot;, &quot;c&quot;]
+a.slice(-2, -1) // [&quot;b&quot;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>-2</code>表示倒数计算的第二个位置，<code>-1</code>表示倒数计算的第一个位置。</p><p>如果第一个参数大于等于数组长度，或者第二个参数小于第一个参数，则返回空数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+a.slice(4) // []
+a.slice(2, 1) // []
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>slice()</code>方法的一个重要应用，是将类似数组的对象转为真正的数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>Array.prototype.slice.call({ 0: &#39;a&#39;, 1: &#39;b&#39;, length: 2 })
+// [&#39;a&#39;, &#39;b&#39;]
+
+Array.prototype.slice.call(document.querySelectorAll(&quot;div&quot;));
+Array.prototype.slice.call(arguments);
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码的参数都不是数组，但是通过<code>call</code>方法，在它们上面调用<code>slice()</code>方法，就可以把它们转为真正的数组。</p><h3 id="splice" tabindex="-1"><a class="header-anchor" href="#splice" aria-hidden="true">#</a> splice()</h3><p><code>splice()</code>方法用于删除原数组的一部分成员，并可以在删除的位置添加新的数组成员，返回值是被删除的元素。注意，该方法会改变原数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>arr.splice(start, count, addElement1, addElement2, ...);
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code>splice</code>的第一个参数是删除的起始位置（从0开始），第二个参数是被删除的元素个数。如果后面还有更多的参数，则表示这些就是要被插入数组的新元素。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;];
+a.splice(4, 2) // [&quot;e&quot;, &quot;f&quot;]
+a // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码从原数组4号位置，删除了两个数组成员。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;];
+a.splice(4, 2, 1, 2) // [&quot;e&quot;, &quot;f&quot;]
+a // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, 1, 2]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码除了删除成员，还插入了两个新成员。</p><p>起始位置如果是负数，就表示从倒数位置开始删除。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;];
+a.splice(-4, 2) // [&quot;c&quot;, &quot;d&quot;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码表示，从倒数第四个位置<code>c</code>开始删除两个成员。</p><p>如果只是单纯地插入元素，<code>splice</code>方法的第二个参数可以设为<code>0</code>。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [1, 1, 1];
+
+a.splice(1, 0, 2) // []
+a // [1, 2, 1, 1]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果只提供第一个参数，等同于将原数组在指定位置拆分成两个数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [1, 2, 3, 4];
+a.splice(2) // [3, 4]
+a // [1, 2]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="sort" tabindex="-1"><a class="header-anchor" href="#sort" aria-hidden="true">#</a> sort()</h3><p><code>sort</code>方法对数组成员进行排序，默认是按照字典顺序排序。排序后，原数组将被改变。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[&#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;].sort()
+// [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
+
+[4, 3, 2, 1].sort()
+// [1, 2, 3, 4]
+
+[11, 101].sort()
+// [101, 11]
+
+[10111, 1101, 111].sort()
+// [10111, 1101, 111]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码的最后两个例子，需要特殊注意。<code>sort()</code>方法不是按照大小排序，而是按照字典顺序。也就是说，数值会被先转成字符串，再按照字典顺序进行比较，所以<code>101</code>排在<code>11</code>的前面。</p><p>如果想让<code>sort</code>方法按照自定义方式排序，可以传入一个函数作为参数。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[10111, 1101, 111].sort(function (a, b) {
+  return a - b;
+})
+// [111, 1101, 10111]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>sort</code>的参数函数本身接受两个参数，表示进行比较的两个数组成员。如果该函数的返回值大于<code>0</code>，表示第一个成员排在第二个成员后面；其他情况下，都是第一个元素排在第二个元素前面。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[
+  { name: &quot;张三&quot;, age: 30 },
+  { name: &quot;李四&quot;, age: 24 },
+  { name: &quot;王五&quot;, age: 28  }
+].sort(function (o1, o2) {
+  return o1.age - o2.age;
+})
+// [
+//   { name: &quot;李四&quot;, age: 24 },
+//   { name: &quot;王五&quot;, age: 28  },
+//   { name: &quot;张三&quot;, age: 30 }
+// ]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>注意，自定义的排序函数应该返回数值，否则不同的浏览器可能有不同的实现，不能保证结果都一致。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>// bad
+[1, 4, 2, 6, 0, 6, 2, 6].sort((a, b) =&gt; a &gt; b)
+
+// good
+[1, 4, 2, 6, 0, 6, 2, 6].sort((a, b) =&gt; a - b)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，前一种排序算法返回的是布尔值，这是不推荐使用的。后一种是数值，才是更好的写法。</p><h3 id="map" tabindex="-1"><a class="header-anchor" href="#map" aria-hidden="true">#</a> map()</h3><p><code>map</code>方法将数组的所有成员依次传入参数函数，然后把每一次的执行结果组成一个新数组返回。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var numbers = [1, 2, 3];
+
+numbers.map(function (n) {
+  return n + 1;
+});
+// [2, 3, 4]
+
+numbers
+// [1, 2, 3]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>numbers</code>数组的所有成员依次执行参数函数，运行结果组成一个新数组返回，原数组没有变化。</p><p><code>map</code>方法接受一个函数作为参数。该函数调用时，<code>map</code>方法向它传入三个参数：当前成员、当前位置和数组本身。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[1, 2, 3].map(function(elem, index, arr) {
+  return elem * index;
+});
+// [0, 2, 6]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>map</code>方法的回调函数有三个参数，<code>elem</code>为当前成员的值，<code>index</code>为当前成员的位置，<code>arr</code>为原数组（<code>[1, 2, 3]</code>）。</p><p><code>map</code>方法还可以接受第二个参数，用来绑定回调函数内部的<code>this</code>变量（详见《this 变量》一章）。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+
+[1, 2].map(function (e) {
+  return this[e];
+}, arr)
+// [&#39;b&#39;, &#39;c&#39;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码通过<code>map</code>方法的第二个参数，将回调函数内部的<code>this</code>对象，指向<code>arr</code>数组。</p><p>如果数组有空位，<code>map</code>方法的回调函数在这个位置不会执行，会跳过数组的空位。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var f = function (n) { return &#39;a&#39; };
+
+[1, undefined, 2].map(f) // [&quot;a&quot;, &quot;a&quot;, &quot;a&quot;]
+[1, null, 2].map(f) // [&quot;a&quot;, &quot;a&quot;, &quot;a&quot;]
+[1, , 2].map(f) // [&quot;a&quot;, , &quot;a&quot;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>map</code>方法不会跳过<code>undefined</code>和<code>null</code>，但是会跳过空位。</p><h3 id="foreach" tabindex="-1"><a class="header-anchor" href="#foreach" aria-hidden="true">#</a> forEach()</h3><p><code>forEach</code>方法与<code>map</code>方法很相似，也是对数组的所有成员依次执行参数函数。但是，<code>forEach</code>方法不返回值，只用来操作数据。这就是说，如果数组遍历的目的是为了得到返回值，那么使用<code>map</code>方法，否则使用<code>forEach</code>方法。</p><p><code>forEach</code>的用法与<code>map</code>方法一致，参数是一个函数，该函数同样接受三个参数：当前值、当前位置、整个数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>function log(element, index, array) {
+  console.log(&#39;[&#39; + index + &#39;] = &#39; + element);
+}
+
+[2, 5, 9].forEach(log);
+// [0] = 2
+// [1] = 5
+// [2] = 9
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>forEach</code>遍历数组不是为了得到返回值，而是为了在屏幕输出内容，所以不必使用<code>map</code>方法。</p><p><code>forEach</code>方法也可以接受第二个参数，绑定参数函数的<code>this</code>变量。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var out = [];
+
+[1, 2, 3].forEach(function(elem) {
+  this.push(elem * elem);
+}, out);
+
+out // [1, 4, 9]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，空数组<code>out</code>是<code>forEach</code>方法的第二个参数，结果，回调函数内部的<code>this</code>关键字就指向<code>out</code>。</p><p>注意，<code>forEach</code>方法无法中断执行，总是会将所有成员遍历完。如果希望符合某种条件时，就中断遍历，要使用<code>for</code>循环。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3];
+
+for (var i = 0; i &lt; arr.length; i++) {
+  if (arr[i] === 2) break;
+  console.log(arr[i]);
+}
+// 1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，执行到数组的第二个成员时，就会中断执行。<code>forEach</code>方法做不到这一点。</p><p><code>forEach</code>方法也会跳过数组的空位。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var log = function (n) {
+  console.log(n + 1);
+};
+
+[1, undefined, 2].forEach(log)
+// 2
+// NaN
+// 3
+
+[1, null, 2].forEach(log)
+// 2
+// 1
+// 3
+
+[1, , 2].forEach(log)
+// 2
+// 3
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>forEach</code>方法不会跳过<code>undefined</code>和<code>null</code>，但会跳过空位。</p><h3 id="filter" tabindex="-1"><a class="header-anchor" href="#filter" aria-hidden="true">#</a> filter()</h3><p><code>filter</code>方法用于过滤数组成员，满足条件的成员组成一个新数组返回。</p><p>它的参数是一个函数，所有数组成员依次执行该函数，返回结果为<code>true</code>的成员组成一个新数组返回。该方法不会改变原数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[1, 2, 3, 4, 5].filter(function (elem) {
+  return (elem &gt; 3);
+})
+// [4, 5]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码将大于<code>3</code>的数组成员，作为一个新数组返回。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [0, 1, &#39;a&#39;, false];
+
+arr.filter(Boolean)
+// [1, &quot;a&quot;]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>filter</code>方法返回数组<code>arr</code>里面所有布尔值为<code>true</code>的成员。</p><p><code>filter</code>方法的参数函数可以接受三个参数：当前成员，当前位置和整个数组。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[1, 2, 3, 4, 5].filter(function (elem, index, arr) {
+  return index % 2 === 0;
+});
+// [1, 3, 5]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码返回偶数位置的成员组成的新数组。</p><p><code>filter</code>方法还可以接受第二个参数，用来绑定参数函数内部的<code>this</code>变量。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var obj = { MAX: 3 };
+var myFilter = function (item) {
+  if (item &gt; this.MAX) return true;
+};
+
+var arr = [2, 8, 3, 4, 1, 3, 2, 9];
+arr.filter(myFilter, obj) // [8, 4, 9]
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，过滤器<code>myFilter</code>内部有<code>this</code>变量，它可以被<code>filter</code>方法的第二个参数<code>obj</code>绑定，返回大于<code>3</code>的成员。</p><h3 id="some-every" tabindex="-1"><a class="header-anchor" href="#some-every" aria-hidden="true">#</a> some()，every()</h3><p>这两个方法类似“断言”（assert），返回一个布尔值，表示判断数组成员是否符合某种条件。</p><p>它们接受一个函数作为参数，所有数组成员依次执行该函数。该函数接受三个参数：当前成员、当前位置和整个数组，然后返回一个布尔值。</p><p><code>some</code>方法是只要一个成员的返回值是<code>true</code>，则整个<code>some</code>方法的返回值就是<code>true</code>，否则返回<code>false</code>。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3, 4, 5];
+arr.some(function (elem, index, arr) {
+  return elem &gt;= 3;
+});
+// true
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，如果数组<code>arr</code>有一个成员大于等于3，<code>some</code>方法就返回<code>true</code>。</p><p><code>every</code>方法是所有成员的返回值都是<code>true</code>，整个<code>every</code>方法才返回<code>true</code>，否则返回<code>false</code>。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3, 4, 5];
+arr.every(function (elem, index, arr) {
+  return elem &gt;= 3;
+});
+// false
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，数组<code>arr</code>并非所有成员大于等于<code>3</code>，所以返回<code>false</code>。</p><p>注意，对于空数组，<code>some</code>方法返回<code>false</code>，<code>every</code>方法返回<code>true</code>，回调函数都不会执行。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>function isEven(x) { return x % 2 === 0 }
+
+[].some(isEven) // false
+[].every(isEven) // true
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>some</code>和<code>every</code>方法还可以接受第二个参数，用来绑定参数函数内部的<code>this</code>变量。</p><h3 id="reduce-reduceright" tabindex="-1"><a class="header-anchor" href="#reduce-reduceright" aria-hidden="true">#</a> reduce()，reduceRight()</h3><p><code>reduce</code>方法和<code>reduceRight</code>方法依次处理数组的每个成员，最终累计为一个值。它们的差别是，<code>reduce</code>是从左到右处理（从第一个成员到最后一个成员），<code>reduceRight</code>则是从右到左（从最后一个成员到第一个成员），其他完全一样。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[1, 2, 3, 4, 5].reduce(function (a, b) {
+  console.log(a, b);
+  return a + b;
+})
+// 1 2
+// 3 3
+// 6 4
+// 10 5
+//最后结果：15
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>reduce</code>方法求出数组所有成员的和。第一次执行，<code>a</code>是数组的第一个成员<code>1</code>，<code>b</code>是数组的第二个成员<code>2</code>。第二次执行，<code>a</code>为上一轮的返回值<code>3</code>，<code>b</code>为第三个成员<code>3</code>。第三次执行，<code>a</code>为上一轮的返回值<code>6</code>，<code>b</code>为第四个成员<code>4</code>。第四次执行，<code>a</code>为上一轮返回值<code>10</code>，<code>b</code>为第五个成员<code>5</code>。至此所有成员遍历完成，整个方法的返回值就是最后一轮的返回值<code>15</code>。</p><p><code>reduce</code>方法和<code>reduceRight</code>方法的第一个参数都是一个函数。该函数接受以下四个参数。</p><ol><li>累积变量，默认为数组的第一个成员</li><li>当前变量，默认为数组的第二个成员</li><li>当前位置（从0开始）</li><li>原数组</li></ol><p>这四个参数之中，只有前两个是必须的，后两个则是可选的。</p><p>如果要对累积变量指定初值，可以把它放在<code>reduce</code>方法和<code>reduceRight</code>方法的第二个参数。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[1, 2, 3, 4, 5].reduce(function (a, b) {
+  return a + b;
+}, 10);
+// 25
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码指定参数<code>a</code>的初值为10，所以数组从10开始累加，最终结果为25。注意，这时<code>b</code>是从数组的第一个成员开始遍历。</p><p>上面的第二个参数相当于设定了默认值，处理空数组时尤其有用。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>function add(prev, cur) {
+  return prev + cur;
+}
+
+[].reduce(add)
+// TypeError: Reduce of empty array with no initial value
+[].reduce(add, 1)
+// 1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，由于空数组取不到初始值，<code>reduce</code>方法会报错。这时，加上第二个参数，就能保证总是会返回一个值。</p><p>下面是一个<code>reduceRight</code>方法的例子。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>function subtract(prev, cur) {
+  return prev - cur;
+}
+
+[3, 2, 1].reduce(subtract) // 0
+[3, 2, 1].reduceRight(subtract) // -4
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>reduce</code>方法相当于<code>3</code>减去<code>2</code>再减去<code>1</code>，<code>reduceRight</code>方法相当于<code>1</code>减去<code>2</code>再减去<code>3</code>。</p><p>由于这两个方法会遍历数组，所以实际上还可以用来做一些遍历相关的操作。比如，找出字符长度最长的数组成员。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>function findLongest(entries) {
+  return entries.reduce(function (longest, entry) {
+    return entry.length &gt; longest.length ? entry : longest;
+  }, &#39;&#39;);
+}
+
+findLongest([&#39;aaa&#39;, &#39;bb&#39;, &#39;c&#39;]) // &quot;aaa&quot;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，<code>reduce</code>的参数函数会将字符长度较长的那个数组成员，作为累积值。这导致遍历所有成员之后，累积值就是字符长度最长的那个成员。</p><h3 id="indexof-lastindexof" tabindex="-1"><a class="header-anchor" href="#indexof-lastindexof" aria-hidden="true">#</a> indexOf()，lastIndexOf()</h3><p><code>indexOf</code>方法返回给定元素在数组中第一次出现的位置，如果没有出现则返回<code>-1</code>。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;];
+
+a.indexOf(&#39;b&#39;) // 1
+a.indexOf(&#39;y&#39;) // -1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>indexOf</code>方法还可以接受第二个参数，表示搜索的开始位置。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;].indexOf(&#39;a&#39;, 1) // -1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>上面代码从1号位置开始搜索字符<code>a</code>，结果为<code>-1</code>，表示没有搜索到。</p><p><code>lastIndexOf</code>方法返回给定元素在数组中最后一次出现的位置，如果没有出现则返回<code>-1</code>。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var a = [2, 5, 9, 2];
+a.lastIndexOf(2) // 3
+a.lastIndexOf(7) // -1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>注意，这两个方法不能用来搜索<code>NaN</code>的位置，即它们无法确定数组成员是否包含<code>NaN</code>。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>[NaN].indexOf(NaN) // -1
+[NaN].lastIndexOf(NaN) // -1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>这是因为这两个方法内部，使用严格相等运算符（<code>===</code>）进行比较，而<code>NaN</code>是唯一一个不等于自身的值。</p><h3 id="链式使用" tabindex="-1"><a class="header-anchor" href="#链式使用" aria-hidden="true">#</a> 链式使用</h3><p>上面这些数组方法之中，有不少返回的还是数组，所以可以链式使用。</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>var users = [
+  {name: &#39;tom&#39;, email: &#39;tom@example.com&#39;},
+  {name: &#39;peter&#39;, email: &#39;peter@example.com&#39;}
+];
+
+users
+.map(function (user) {
+  return user.email;
+})
+.filter(function (email) {
+  return /^t/.test(email);
+})
+.forEach(function (email) {
+  console.log(email);
+});
+// &quot;tom@example.com&quot;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面代码中，先产生一个所有 Email 地址组成的数组，然后再过滤出以<code>t</code>开头的 Email 地址，最后将它打印出来。</p><h2 id="参考链接" tabindex="-1"><a class="header-anchor" href="#参考链接" aria-hidden="true">#</a> 参考链接</h2><ul><li>阮一峰 https://wangdoc.com/javascript/stdlib/array.html</li></ul><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="external-link meta-item-label" href="https://github.com/305810827/myDocs/edit/main/docs/frontend/js/array.md" rel="noopener noreferrer" target="_blank" aria-label="Edit this page"><!--[--><!--]--> Edit this page <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: v_yanjiexu@tencent.com">v_yanjiexu</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><!----><span class="next"><a aria-current="page" href="/frontend/js/array.html" class="router-link-active router-link-exact-active router-link-active" aria-label="Array 对象"><!--[--><!--]--> Array 对象 <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.659fa32e.js" defer></script>
+  </body>
+</html>

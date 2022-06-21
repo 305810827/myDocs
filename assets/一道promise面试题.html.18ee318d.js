@@ -1,0 +1,1 @@
+const e={key:"v-0e03fe7a",path:"/interview/js/%E4%B8%80%E9%81%93promise%E9%9D%A2%E8%AF%95%E9%A2%98.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"interview/js/\u4E00\u9053promise\u9762\u8BD5\u9898.md"};export{e as data};

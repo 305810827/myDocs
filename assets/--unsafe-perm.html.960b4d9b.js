@@ -1,0 +1,1 @@
+const e={key:"v-30428f5c",path:"/question/--unsafe-perm.html",title:"npm \u7684 --unsafe-perm \u53C2\u6570",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"question/--unsafe-perm.md"};export{e as data};

@@ -1,0 +1,1 @@
+const e={key:"v-df7dc812",path:"/interview/vue/vuex.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1655799037e3,contributors:[{name:"xuyanjie",email:"305810827@qq.com",commits:1}]},filePathRelative:"interview/vue/vuex.md"};export{e as data};

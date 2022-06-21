@@ -1,0 +1,1 @@
+const e={key:"v-52534b2c",path:"/interview/css/html5%E3%80%81css3.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1653381848e3,contributors:[{name:"v_yanjiexu",email:"305810827@qq.com",commits:1},{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"interview/css/html5\u3001css3.md"};export{e as data};

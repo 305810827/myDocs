@@ -1,0 +1,1 @@
+const e={key:"v-7e57c7c1",path:"/interview/js/event%20bus.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"interview/js/event bus.md"};export{e as data};

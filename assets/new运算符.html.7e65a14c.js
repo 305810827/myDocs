@@ -1,0 +1,1 @@
+const e={key:"v-16182b94",path:"/interview/js/new%E8%BF%90%E7%AE%97%E7%AC%A6.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:3,title:"new",slug:"new",children:[]}],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"interview/js/new\u8FD0\u7B97\u7B26.md"};export{e as data};

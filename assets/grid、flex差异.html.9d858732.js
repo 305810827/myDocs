@@ -1,0 +1,1 @@
+import{_ as e,o as _,c as l}from"./app.659fa32e.js";const r={};function c(t,f){return _(),l("p",null,"Flex:\u8BBE\u7F6Eflex\u4E4B\u540E\uFF0C\u5B50\u5143\u7D20\u81EA\u52A8\u6210\u4E3A\u5BB9\u5668\u6210\u5458\uFF0C\u79F0\u4E3AFlex\u9879\u76EE")}var o=e(r,[["render",c],["__file","grid\u3001flex\u5DEE\u5F02.html.vue"]]);export{o as default};

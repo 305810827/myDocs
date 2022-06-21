@@ -1,0 +1,1 @@
+const t={key:"v-2e1272a8",path:"/frontend/js/JavaScript%20%E5%BC%95%E6%93%8E.html",title:"JavaScript \u5F15\u64CE",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1653380275e3,contributors:[{name:"v_yanjiexu",email:"305810827@qq.com",commits:1}]},filePathRelative:"frontend/js/JavaScript \u5F15\u64CE.md"};export{t as data};

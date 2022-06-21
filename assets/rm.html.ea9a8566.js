@@ -1,0 +1,1 @@
+const e={key:"v-cde8b9ec",path:"/linux/rm.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:3,title:"\u4E00\u3001rm",slug:"\u4E00\u3001rm",children:[]}],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"linux/rm.md"};export{e as data};

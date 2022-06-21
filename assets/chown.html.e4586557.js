@@ -1,0 +1,1 @@
+import{_ as e,o as c,c as r}from"./app.659fa32e.js";const o={};function n(t,_){return c(),r("p",null,"chown -R user.group dir \uFF08\u53EF\u4EE5\u8FDE\u76EE\u5F55\u4E0B\u7684\u6240\u6709\u5B50\u76EE\u5F55\u6216\u6587\u4EF6\u90FD\u540C\u65F6\u66F4\u6539\u6587\u4EF6\u6240\u6709\u8005\uFF09")}var l=e(o,[["render",n],["__file","chown.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const e={key:"v-0f2cf00e",path:"/question/wanted-order.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"question/wanted-order.md"};export{e as data};

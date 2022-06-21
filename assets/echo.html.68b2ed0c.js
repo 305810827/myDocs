@@ -1,0 +1,1 @@
+const e={key:"v-1aaf1340",path:"/linux/echo.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:3,title:"\u4E00\u3001echo",slug:"\u4E00\u3001echo",children:[]}],git:{updatedTime:1651049227e3,contributors:[{name:"v_yanjiexu",email:"v_yanjiexu@tencent.com",commits:1}]},filePathRelative:"linux/echo.md"};export{e as data};

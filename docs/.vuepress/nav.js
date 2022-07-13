@@ -16,10 +16,14 @@ module.exports = [
     text: 'linux',
     link: '/linux/',
   },
-  // {
-  //   text: '博文',
-  //   link: '/guide/',
-  // },
+  {
+    text: '博文',
+    link: '/guide/',
+  },
+  {
+    text: '区块链',
+    link: '/blockchain/',
+  },
   // {
   //   text: '每日一题',
   //   link: '/question/'

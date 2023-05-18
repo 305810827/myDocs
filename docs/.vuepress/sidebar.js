@@ -1,12 +1,12 @@
 const readFileList = require("../../scripts/readFileList.js");
 module.exports = {
-      '/guide/': [
+    '/guide/': [
         {
-          text: 'Guide',
-          collapsable: false,
-          children: readFileList('guide')
+            text: 'Guide',
+            collapsable: false,
+            children: readFileList('guide')
         }
-      ],
+    ],
     '/blockchain/': [
         {
             text: '',
@@ -21,54 +21,55 @@ module.exports = {
             children: readFileList('daily')
         }
     ],
-      '/linux/': [
+    '/linux/': [
         {
-          text: 'linux',
-          children: readFileList('linux')
+            text: 'linux',
+            collapsable: false,
+            children: readFileList('linux')
         }
-      ],
-      '/question/': [
+    ],
+    '/question/': [
         {
-          text: '每日一题',
-          collapsable: false,
-          children: readFileList('question')
+            text: '每日一题',
+            collapsable: false,
+            children: readFileList('question')
         }
-      ],
-      '/interview/': [
+    ],
+    '/interview/': [
         {
-          text: 'javascript',
-          collapsible: false,
-          children: readFileList('interview/js')
+            text: 'javascript',
+            collapsible: false,
+            children: readFileList('interview/js')
         }, {
-          text: 'css',
-          collapsable: false,
-          children: readFileList('interview/css')
+            text: 'css',
+            collapsable: false,
+            children: readFileList('interview/css')
         }, {
-          text: 'vue',
-          collapsable: true,
-          children: readFileList('interview/vue')
+            text: 'vue',
+            collapsable: true,
+            children: readFileList('interview/vue')
         }, {
-          text: 'netword',
-          collapsable: true,
-          children: readFileList('interview/netword')
+            text: 'netword',
+            collapsable: true,
+            children: readFileList('interview/netword')
         }, {
-          text: 'Algorithms',
-          collapsable: true,
-          children: readFileList('interview/Algorithms')
+            text: 'Algorithms',
+            collapsable: true,
+            children: readFileList('interview/Algorithms')
         }, {
-          text: 'other',
-          collapsable: true,
-          children: readFileList('interview/other')
+            text: 'other',
+            collapsable: true,
+            children: readFileList('interview/other')
         }
-      ],
-      '/frontend/js/': [
-            '',
-            'array',
-            'object',
-            'math',
-            'date',
-            'set',
-            'map',
-            'reflect',
-      ],
-    }
+    ],
+    '/frontend/js/': [
+        '',
+        'array',
+        'object',
+        'math',
+        'date',
+        'set',
+        'map',
+        'reflect',
+    ],
+}

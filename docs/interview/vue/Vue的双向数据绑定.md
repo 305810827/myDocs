@@ -80,4 +80,4 @@
 
 
 
-![image-20220530202908723](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220530202908723.png)
+![image-20220530202908723](../image/Vue的双向数据绑定/image-20220530202908723.png)

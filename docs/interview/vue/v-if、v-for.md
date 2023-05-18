@@ -26,7 +26,7 @@ vue2输出的渲染函数是先执行循环，在看条件判断，如果将v-if
 
 vue2
 
-![image-20220516151738376](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220516151738376.png)
+![image-20220516151738376](../image/v-if、v-for/image-20220516151738376.png)
 
 v2：https://github1s.com/vuejs/vue/blob/HEAD/src/compiler/codegen/index.js#L65-L66
 
@@ -34,7 +34,7 @@ v2：https://github1s.com/vuejs/vue/blob/HEAD/src/compiler/codegen/index.js#L65-
 
 vue3
 
-![image-20220516151847559](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220516151847559.png)
+![image-20220516151847559](../image/v-if、v-for/image-20220516151847559-16843997408211.png)
 
 v3：https://github1s.com/vuejs/core/blob/HEAD/packages/compiler-core/src/codegen.ts#L586-L587
 

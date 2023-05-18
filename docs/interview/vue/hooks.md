@@ -21,8 +21,6 @@ import { useRouter } from 'vue-router';
 // 以上这些方法，也是 vue3 中相关的 Hook！
 ```
 
-![image-20220621145409122](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220621145409122.png)
-
 ### 四、为什么需要hooks
 
 ##### 1、更好的状态复用

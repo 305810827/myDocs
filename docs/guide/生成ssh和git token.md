@@ -28,8 +28,8 @@ typora-root-url: ..\imagech
 
 3、选择“tokens(classic)”、点击“Generate new token”:
 
-![image-20230518154637285](..\image\生成ssh和git token\image-20230518154637285-16843960045041.png)
+![image-20230518154637285](../image/生成ssh和git token/image-20230518154637285-16843960045041.png)
 
 4、按自己需求选择，然后便可生成一个token：
 
-![image-20230518154842405](..\image\生成ssh和git token\image-20230518154842405-16843961246082.png)
+![image-20230518154842405](../image/生成ssh和git token/image-20230518154842405-16843961246082.png)

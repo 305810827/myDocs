@@ -7,6 +7,20 @@ module.exports = {
           children: readFileList('guide')
         }
       ],
+    '/blockchain/': [
+        {
+            text: '',
+            collapsable: false,
+            children: readFileList('blockchain')
+        }
+    ],
+    '/daily/': [
+        {
+            text: '',
+            collapsable: false,
+            children: readFileList('daily')
+        }
+    ],
       '/linux/': [
         {
           text: 'linux',

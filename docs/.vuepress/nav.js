@@ -24,10 +24,10 @@ module.exports = [
     text: '区块链',
     link: '/blockchain/',
   },
-  // {
-  //   text: '每日一题',
-  //   link: '/question/'
-  // },
+  {
+    text: '随写',
+    link: '/daily/'
+  },
   {
     text: 'github',
     link: 'https://github.com/305810827'

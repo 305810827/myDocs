@@ -26,10 +26,10 @@ typora-root-url: ..\imagech
 
 ![image-20230518153259174](../image/生成ssh和git token/1684394840187.png)
 
-3、选择“Personal access tokens”、点击“Generate a personal access token”:
+3、选择“tokens(classic)”、点击“Generate new token”:
 
-![image-20230518153611422](../image/生成ssh和git token/1684395366489.png)
+![image-20230518154637285](..\image\生成ssh和git token\image-20230518154637285-16843960045041.png)
 
-4、按自己需求填一下，然后便可生成一个token：
+4、按自己需求选择，然后便可生成一个token：
 
-![image-20230518153820492](../image/生成ssh和git token/img.png)
+![image-20230518154842405](..\image\生成ssh和git token\image-20230518154842405-16843961246082.png)

@@ -124,6 +124,17 @@ git push [remote] --force
 git archive -o ./dist.zip HEAD
 ```
 
+### 缓存修改
+
+```
+git stash         // 存储当前分支下的所有改动
+git stash list    // 查看所有的存储列表
+git stash pop     // 释放最近一次保存的内容，并且将该次保存的内容出栈
+git stash apply stash@{0}   // 应用某一次的存储内容，但不删除改内容
+git stash push .../.../     // 存储指定的文件修改
+git stash show stash@{0}    // 查看某一个压栈修改了哪几个文件  -p 查看修改内容
+```
+
 
 
 # 二、应用

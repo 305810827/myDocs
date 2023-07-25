@@ -5,7 +5,8 @@ module.exports = [
     children: [
       { text: 'html', link: '/frontend/html/' },
       { text: 'css', link: '/frontend/css/' },
-      { text: 'js', link: '/frontend/js/' }
+      { text: 'js', link: '/frontend/js/' },
+      { text: 'vite', link: '/frontend/vite/' }
     ]
   },
   {

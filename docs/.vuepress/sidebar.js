@@ -72,4 +72,8 @@ module.exports = {
         'map',
         'reflect',
     ],
+    '/frontend/vite/': [
+        '',
+        'sortUserPlugins'
+    ],
 }

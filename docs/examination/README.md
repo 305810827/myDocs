@@ -1,16 +1,2 @@
----
-layout: Mind
-heroImage: https://vuepress.vuejs.org/hero.png
-heroText: test
-tagline: 
-actionText: Quick Start →
-actionLink: /guide/
-features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by  with ❤️
----
+# 面试题
+前端越来越卷，没有什么技术是不需要的，什么都要会。

@@ -33,7 +33,7 @@ module.exports = [
     text: '考研',  
     ariaLabel: 'PubMed',
     children: [
-      { text: '数学', link: '/Mind/' },
+      { text: '数学', link: '/examination/' },
     ] 
   },
   {

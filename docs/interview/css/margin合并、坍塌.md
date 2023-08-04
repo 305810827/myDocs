@@ -40,8 +40,6 @@
 
 普通文档流中父子块级元素，如果父元素没有设置上内边距或上边框，子元素的上边距就会和父元素的上边距重合，以他们两个中间最大上边距为准，与距离他们最近的盒子隔开。
 
-![image-20220525094232183](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220525094232183.png)![image-20220525094237056](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220525094237056.png)
-
 ```javascript
 <html>
     <head>

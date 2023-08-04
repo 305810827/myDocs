@@ -12,9 +12,11 @@ diff算法是一个对比算法，对比新旧虚拟dom，找到是哪个虚拟d
 
 1、同层对比，深度优先遍历
 
+![截屏2021-08-08 上午11.32.47.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5ca3d338e5a445ab80e40042c50ac79a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
+
 2、当数据改变时，触发setter方法，通过dep.notify通知订阅者watcher更新视图，watcher在更新视图前通过patch方法，整个patch方法就是diff算法的实现。
 
-![image-20220601162208350](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601162208350.png)
+![截屏2021-08-08 上午11.49.38.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1db54647698e4c76b6fc38a02067ad72~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 3、patch方法
 
@@ -98,7 +100,7 @@ function patchVnode(oldVnode, newVnode) {
 </ul>
 ```
 
-![image-20220601165632116](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601165632116.png)
+![截屏2021-08-08 下午2.55.26.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3eb33b1b28e7461f9aedb857736a142c~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 然后会进行互相进行比较，总共有五种比较情况：
 
@@ -108,11 +110,11 @@ function patchVnode(oldVnode, newVnode) {
 - 4、`oldE 和 newE `使用`sameVnode方法`进行比较，`sameVnode(oldE, newE)`
 - 5、如果以上逻辑都匹配不到，再把所有旧子节点的 `key` 做一个映射到旧节点下标的 `key -> index` 表，然后用新 `vnode` 的 `key` 去找出在旧节点中可以复用的位置。
 
-![image-20220601165645891](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601165645891.png)
+![截屏2021-08-08 下午2.57.22.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/727b5dd8a3424d22afd9dc5cf0dae05e~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 （5）案例
 
-![image-20220601165740755](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601165740755.png)
+![截屏2021-08-08 下午3.03.31.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1efbc4e76c234dccb44cef0a75073d98~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 - 第一步
 
@@ -123,7 +125,7 @@ newS = b, newE = a
 
 比较结果：`oldS 和 newE` 相等，需要把`节点a`移动到`newE`所对应的位置，也就是末尾，同时`oldS++`，`newE--`
 
-![image-20220601165805815](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601165805815.png)
+![截屏2021-08-08 下午3.26.25.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d7698f560bb44107911585580c241a99~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 - 第二步
 
@@ -134,7 +136,7 @@ newS = b, newE = e
 
 比较结果：`oldS 和 newS`相等，需要把`节点b`移动到`newS`所对应的位置，同时`oldS++`,`newS++`
 
-![image-20220601165823208](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601165823208.png)
+![截屏2021-08-08 下午3.27.13.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1cda8545d6634bcdbf2d007193922092~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 - 第三步
 
@@ -146,13 +148,13 @@ newS = c, newE = e
 
 比较结果：`oldS、oldE 和 newS`相等，需要把`节点c`移动到`newS`所对应的位置，同时`oldS++`,`newS++`
 
-![image-20220601165853233](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601165853233.png)
+![截屏2021-08-08 下午3.31.48.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fdbca1cefdec4ba08637c37a70f26af6~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 - 第四步
 
 `oldS > oldE`，则`oldCh`先遍历完成了，而`newCh`还没遍历完，说明`newCh比oldCh多`，所以需要将多出来的节点，插入到真实DOM上对应的位置上
 
-![image-20220601165906595](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601165906595.png)
+![截屏2021-08-08 下午3.37.51.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ec374b664e94888b00721829738ea7a~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 ```javascript
 function updateChildren(parentElm, oldCh, newCh) {
@@ -239,6 +241,6 @@ function updateChildren(parentElm, oldCh, newCh) {
 
 从上面代码并结合patch判断统一类型的节点逻辑可以看出，key相同的会被判断为同一个节点，然而实际上原本的三个标签key都变了。diff算法会把key相同的li认为是同一类型的节点，进而执行patchVnode方法，判断子文本节点并且不一样，直接更新了文本节点，结果没有复用到节点。
 
-![image-20220601170517082](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220601170517082.png)
+![截屏2021-08-08 下午5.45.17.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ecc93fb2bc544a83b8cc7b7cbcaf1857~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 https://juejin.cn/post/6994959998283907102

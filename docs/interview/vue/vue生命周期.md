@@ -53,10 +53,10 @@
 
 v2
 
-![image-20220516154947575](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220516154947575.png)
+![image-20220516154947575](../image/vue生命周期/image-20220516154947575.png)
 
 
 
 V3
 
-![image-20220516154927071](/Users/xuyanjie/项目/gitRepository/个人/myDocs/docs/image/image-20220516154927071.png)
+![image-20220516154927071](../image/vue生命周期/image-20220516154927071.png)

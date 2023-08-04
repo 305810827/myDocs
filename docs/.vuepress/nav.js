@@ -29,6 +29,13 @@ module.exports = [
     text: '随写',
     link: '/daily/'
   },
+  { 
+    text: '考研',  
+    ariaLabel: 'PubMed',
+    children: [
+      { text: '数学', link: '/Mind/' },
+    ] 
+  },
   {
     text: 'github',
     link: 'https://github.com/305810827'

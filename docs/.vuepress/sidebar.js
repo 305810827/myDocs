@@ -76,4 +76,11 @@ module.exports = {
         '',
         'sortUserPlugins'
     ],
+    '/examination/': [
+        {
+            text: '考研',
+            collapsable: false,
+            children: readFileList('examination')
+        }
+    ],
 }

@@ -1,6 +1,5 @@
 ---
 title: 自定义 Vue 页面
-sidebar: auto
 ---
 
 # 自定义 Vue 页面

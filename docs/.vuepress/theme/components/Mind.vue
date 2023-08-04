@@ -7,6 +7,6 @@
   
   <script>
   export default {
-    name: 'CustomPage'
+    name: 'MyMind'
   }
   </script>

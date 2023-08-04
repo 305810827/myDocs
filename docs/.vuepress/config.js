@@ -30,6 +30,16 @@ module.exports         = {
     sidebar:require('./sidebar')
   }),
 
+  pages: {
+    '/Mind/': {
+      title: '自定义页面',
+      content: 'This is a custom page',
+      frontmatter: {
+        sidebar: false
+      }
+    }
+  }
+
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */

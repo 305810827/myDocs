@@ -27,7 +27,9 @@
                     'topic': '高等数学',
                     'background-color': '#0000ff',
                 },
-                { id: 'sub11', parentid: 'sub1', topic: '函数和数列', url: '/examination/math/fx.html' },
+                { id: 'sub11', parentid: 'sub1', topic: '数列、函数及其极限' },
+                { id: 'sub12', parentid: 'sub1', topic: 'jk' },
+
                 // { id: 'sub12', parentid: 'sub1', topic: 'sub12' },
                 // { id: 'sub13', parentid: 'sub1', topic: 'sub13' },
 

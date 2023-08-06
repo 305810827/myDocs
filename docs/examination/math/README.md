@@ -1,6 +1,5 @@
 ---
 title: 自定义 Vue 页面
-footer: false
 sidebar: false
 ---
 

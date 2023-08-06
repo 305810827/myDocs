@@ -1,5 +1,6 @@
 ---
-title: 自定义 Vue 页面
+title: 三
+sidebar: false
 ---
 
 # 自定义 Vue 页面

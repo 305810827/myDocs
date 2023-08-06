@@ -1,7 +1,7 @@
-const { resolve } = require('path');
-const { existsSync, lstatSync, readdirSync } = require('fs');
+import {resolve} from "path"
+import { existsSync, lstatSync, readdirSync } from "fs"
 
-function readFileList(path) {
+const readFileList = function(path) {
   const fileList = [];
   const dirPath = resolve(`./docs/${path}/`);
   const isDir = existsSync(dirPath) && lstatSync(dirPath).isDirectory();
@@ -25,4 +25,4 @@ function readFileList(path) {
   return fileList.reverse();
 }
 
-module.exports = readFileList;
+export default readFileList;

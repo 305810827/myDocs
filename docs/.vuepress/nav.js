@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     text: '前端',
     ariaLabel: 'front end',
@@ -33,7 +33,10 @@ module.exports = [
     text: '考研',  
     ariaLabel: 'PubMed',
     children: [
-      { text: '数学', link: '/examination/' },
+      { text: '数学', link: '/examination/math/' },
+      { text: '英语', link: '/examination/english/' },
+      { text: '政治', link: '/examination/politics/' },
+      // { text: '专业课', link: '/examination/math/' },
     ] 
   },
   {

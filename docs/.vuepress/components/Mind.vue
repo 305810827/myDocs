@@ -37,7 +37,7 @@
               // location.href="linux/rm.html"
               console.log('Node clicked:', node, location);
               // 在这里执行点击节点后的操作，例如显示节点内容、弹出编辑框等
-              location.href = location.href + node.topic + '.html'
+              location.href = node.data.url || (location.href + node.topic + '.html')
             }
           }
         });

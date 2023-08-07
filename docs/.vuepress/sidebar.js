@@ -83,14 +83,21 @@ export default {
             children: readFileList('examination/math')
         },
         {
-            text: '英语',
-            collapsable: false,
-            children: readFileList('examination/english')
-        },
-        {
             text: '政治',
             collapsable: false,
             children: readFileList('examination/politics')
         }
+       
     ],
+
+    '/examination/': [
+        {
+            text: '英语',
+            collapsable: false,
+            children: readFileList('examination/english')
+        },
+       
+    ],
+
+   
 }

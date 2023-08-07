@@ -20,16 +20,13 @@
             format: 'node_array',
             data: [
                 { id: 'root', isroot: true, topic: '英语' },
+                { id: 'sub1', parentid: 'root', topic: '[labor]:劳动', url:'/examination/english/labor.html' },
+                { id: 'sub2', parentid: 'root', topic: '[oper]:工作', url:'/examination/english/oper.html' },
+                { id: 'sub3', parentid: 'root', topic: '[mand],[mend]:命令;委托', url:'/examination/english/mand.html'},
+                { id: 'sub4', parentid: 'root', topic: '[meter],[mens]:测量', url:'/examination/english/meter.html'},
+                { id: 'sub5', parentid: 'root', topic: '[mere]:贸易；报酬', url:'/examination/english/mere.html'},
+                { id: 'sub6', parentid: 'root', topic: '[not]:知道；标志', url:'/examination/english/not.html'},
 
-                // {
-                //     'id': 'sub1',
-                //     'parentid': 'root',
-                //     'topic': '高等数学',
-                //     'background-color': '#0000ff',
-                // },
-                // { id: 'sub11', parentid: 'sub1', topic: '函数和数列', url: '/examination/math/fx.html' },
-                // { id: 'sub12', parentid: 'sub1', topic: 'sub12' },
-                // { id: 'sub13', parentid: 'sub1', topic: 'sub13' },
 
                 // { id: 'sub2', parentid: 'root', topic: '概率论' },
 

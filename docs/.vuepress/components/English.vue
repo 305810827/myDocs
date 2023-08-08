@@ -24,7 +24,7 @@
                 { id: 'sub2', parentid: 'root', topic: '[oper]:工作', url:'/examination/english/oper.html' },
                 { id: 'sub3', parentid: 'root', topic: '[mand],[mend]:命令;委托', url:'/examination/english/mand.html'},
                 { id: 'sub4', parentid: 'root', topic: '[meter],[mens]:测量', url:'/examination/english/meter.html'},
-                { id: 'sub5', parentid: 'root', topic: '[mere]:贸易；报酬', url:'/examination/english/mere.html'},
+                { id: 'sub5', parentid: 'root', topic: '[merc]:贸易；报酬', url:'/examination/english/merc.html'},
                 { id: 'sub6', parentid: 'root', topic: '[not]:知道；标志', url:'/examination/english/not.html'},
 
 

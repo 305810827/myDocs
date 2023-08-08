@@ -2,49 +2,41 @@
 title: 自定义 Vue 页面
 --- -->
 
-### 1.labour / labor /'leiba(r)/ n.工作；劳动力 v.努力做
-labor over sth./labor to do sth. 努力做某事
-
-e.g. to curb their impact on labor
-
-控制他们对劳动力的影响
-
-e.g. Many people labour to create a fabulous machine
-
-许多人通力合作，创造出来一台神奇的机器
+### 1.diameter  /dai'aemita（r）/ n.直径
+前缀dia-:贯穿
 
 
-### 2.laborious /la'bo:rias/ a.艰苦的，费时费力的；勤劳的   
---ious 复合形容词后缀
-
-e.g. laborious trial and error
-
-辛苦的尝试和失败
-
-### 3.laboratory /la'bpratri/ n.实验室，苦心劳作、研究的地方
---ory 名词后缀表场所
+### 2.geometry /dji'omatri/ n.几何（学） 
+geo-:大地，土地  Gaia 盖亚
 
 
-### 4.elaborate 
-#### /i'laebarat/ a.精心制作的，详尽的
-#### /flaebareit/ vt.精工细作；详细阐述
-e-=ex-:out    例:exit出口   [it]:走
--ate动词后缀
-
-e.g. Italian politicians tend to elaborate speech that would seem old-fashioned to most English-speakers.
-
-意大利的政客们则往往精心准备的演讲，即使这在大多数讲英语的人们看来已经过时了。
+### 3.parameter /pa'raemits/ n.参量，参数；（常 pl.）范围
+para-:在旁的，辅助的
 
 
-### 5.collaborate /ka'laebareit/ v.合作；勾结，通敌
-前缀col-=com-: 共同，一起
+### 4.symmetry /'simatri/ n. 对称
+[sym]=[same]:相同，共同，测量结果一样就是对称
 
-collaborate with the enemy 与敌人勾结
+e.g. Classical dance requires symmetry and balance
 
-e.g. difficulty in communicating well and collaborating
+古典舞蹈要求对称和平衡
 
-交流和合作方面出现了困难
+### 5.symmetrical /si'metnkl/ a.对称的
+-ical形容词后缀 -- asymmetric 不对称的
 
+### 6.dimension /dai'menjh/ n.空间维度；尺寸，面积；规模
+di-加强语气
+
+e.g. It is becoming less clear, however, that such a theory would be a simplification,given the dimensions and universes that it might entail
+
+一种理论所涵盖的规模和领域，它是否还算是一种简化就越来越模糊了。
+
+### 7.immense /i'mens/ a.极大的，巨大的
+im-:not 否定前缀
+
+immense amounts of research
+
+大量的研究
 
 <style>
 .page-meta {

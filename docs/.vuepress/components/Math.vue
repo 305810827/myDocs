@@ -42,7 +42,7 @@
                 { id: 'sub122', parentid: 'sub12', topic: '极坐标系下的图像' },
                 { id: 'sub123', parentid: 'sub12', topic: '参数法-参数方程' },
 
-                { id: 'sub12', parentid: 'sub1', topic: '函数的图像' },
+                { id: 'sub13', parentid: 'sub1', topic: '函数的图像' },
 
                 { id: 'sub2', parentid: 'root', topic: '概率论', 'background-color': '#0000ff', },
                 { id: 'sub3', parentid: 'root', topic: '线性代数', 'background-color': '#0000ff', },

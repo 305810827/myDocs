@@ -26,8 +26,24 @@
                     'topic': '高等数学',
                     'background-color': '#0000ff',
                 },
-                { id: 'sub11', parentid: 'sub1', topic: '数列、函数及其极限' },
-                // { id: 'sub12', parentid: 'sub1', topic: 'jk' },
+                { id: 'sub11', parentid: 'sub1', topic: '函数的概念与特性' },
+                { id: 'sub111', parentid: 'sub11', topic: '函数' },
+                { id: 'sub112', parentid: 'sub11', topic: '反函数' },
+                { id: 'sub113', parentid: 'sub11', topic: '复合函数' },
+                { id: 'sub114', parentid: 'sub11', topic: '四种特性' },
+                { id: 'sub1141', parentid: 'sub114', topic: '有界性' },
+                { id: 'sub1142', parentid: 'sub114', topic: '单调性' },
+                { id: 'sub1143', parentid: 'sub114', topic: '奇偶性' },
+                { id: 'sub1144', parentid: 'sub114', topic: '周期性' },
+                { id: 'sub1145', parentid: 'sub114', topic: '重要结论' },
+
+                { id: 'sub12', parentid: 'sub1', topic: '函数的图像' },
+                { id: 'sub121', parentid: 'sub12', topic: '直角坐标系下的图像' },
+                { id: 'sub122', parentid: 'sub12', topic: '极坐标系下的图像' },
+                { id: 'sub123', parentid: 'sub12', topic: '参数法-参数方程' },
+
+                { id: 'sub12', parentid: 'sub1', topic: '函数的图像' },
+
                 { id: 'sub2', parentid: 'root', topic: '概率论', 'background-color': '#0000ff', },
                 { id: 'sub3', parentid: 'root', topic: '线性代数', 'background-color': '#0000ff', },
 
@@ -51,3 +67,9 @@
     
   }
   </script>
+
+<style scoped>
+/deep/#jsmind_container {
+    height: 1000px;
+}
+</style>

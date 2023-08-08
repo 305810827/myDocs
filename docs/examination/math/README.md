@@ -12,11 +12,6 @@ sidebar: false
     display: none;
 }
 </style>
-<!-- src="https://cdn.jsdelivr.net/npm/jsmind@0.6.4/es6/jsmind.js" -->
-<!-- <script type="module">
-  import jsMind from "jsmind"
-
-</script> -->
 
 
 <ClientOnly>

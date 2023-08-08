@@ -20,7 +20,6 @@
             format: 'node_array',
             data: [
                 { id: 'root', isroot: true, topic: '数学' },
-
                 {
                     'id': 'sub1',
                     'parentid': 'root',
@@ -28,22 +27,23 @@
                     'background-color': '#0000ff',
                 },
                 { id: 'sub11', parentid: 'sub1', topic: '数列、函数及其极限' },
-                { id: 'sub12', parentid: 'sub1', topic: 'jk' },
+                // { id: 'sub12', parentid: 'sub1', topic: 'jk' },
+                { id: 'sub2', parentid: 'root', topic: '概率论', 'background-color': '#0000ff', },
+                { id: 'sub3', parentid: 'root', topic: '线性代数', 'background-color': '#0000ff', },
 
-                // { id: 'sub12', parentid: 'sub1', topic: 'sub12' },
-                // { id: 'sub13', parentid: 'sub1', topic: 'sub13' },
-
-                { id: 'sub2', parentid: 'root', topic: '概率论' },
-
-                // { id: 'sub21', parentid: 'sub2', topic: 'sub21' },
-                // {
-                //     'id': 'sub22',
-                //     'parentid': 'sub2',
-                //     'topic': 'gao',
-                //     'foreground-color': '#33ff33',
-                // },
-
-                { id: 'sub3', parentid: 'root', topic: '线性代数' },
+                {
+                    'id': 'sub4',
+                    'parentid': 'root',
+                    'topic': '公式',
+                    'direction': 'left',
+                    'background-color': '#0000ff',
+                },
+                // { id: 'sub41', parentid: 'sub4', topic: '导数专项' },
+                { id: 'sub41', parentid: 'sub4', topic: '常用导数公式', url:'/examination/math/formula/常用导数公式.html' },
+                { id: 'sub42', parentid: 'sub4', topic: '常用积分公式', url:'/examination/math/formula/常用积分公式.html' },
+                { id: 'sub43', parentid: 'sub4', topic: '常用极限公式', url:'/examination/math/formula/常用极限公式.html' },
+                // { id: 'sub42', parentid: 'sub4', topic: '积分专项' },
+                // { id: 'sub43', parentid: 'sub4', topic: 'jk' },
             ],
         }
       }

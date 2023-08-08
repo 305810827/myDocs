@@ -25,17 +25,15 @@
 
         // 获取容器元素
         const container = document.getElementById('jsmind_container');
-        console.log(container, '22');
+
         // 添加节点点击事件
         container.addEventListener('mousedown', (event) => {
-          console.log(event.target.tagName);
+
           const target = event.target;
           if (target.tagName === 'JMNODE') {
             const nodeId = target.getAttribute('nodeid');
             const node = jm.get_node(nodeId);
-            if (node) {
-              // location.href="linux/rm.html"
-              console.log('Node clicked:', node, location);
+            if (node && node.data.url) {
               // 在这里执行点击节点后的操作，例如显示节点内容、弹出编辑框等
               location.href = node.data.url || (location.href + node.topic + '.html')
             }

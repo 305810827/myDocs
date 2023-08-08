@@ -76,28 +76,8 @@ export default {
         '',
         'sortUserPlugins'
     ],
-    '/examination/': [
-        {
-            text: '数学',
-            collapsable: false,
-            children: readFileList('examination/math')
-        },
-        {
-            text: '政治',
-            collapsable: false,
-            children: readFileList('examination/politics')
-        }
-       
-    ],
-
-    '/examination/': [
-        {
-            text: '英语',
-            collapsable: false,
-            children: readFileList('examination/english')
-        },
-       
-    ],
-
-   
+    '/examination/math': readFileList('examination/math'),
+    '/examination/math/formula': readFileList('examination/formula'), // 公式
+    '/examination/english': readFileList('examination/english'),
+    '/examination/politics': readFileList('examination/politics')
 }

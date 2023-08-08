@@ -6,10 +6,11 @@ actionText: 开始阅读 →
 actionLink: /guide/
 features:
 - title: HTML
-  details: Feature 1 Description
+  details: HTML Description
 - title: CSS
-  details: Feature 2 Description
+  details: CSS Description
 - title: JavaScript
-  details: Feature 3 Description
-footer: 主体：许演杰，备案号：<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19153439号️</a>
+  details: JavaScript Description
+footer: <div>主体：许演杰，备案号：<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19153439号️</a></div>
+footerHtml: true
 ---

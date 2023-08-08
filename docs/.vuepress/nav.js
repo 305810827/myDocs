@@ -1,3 +1,5 @@
+import readFileList from "../../scripts/readFileList.js"
+
 export default [
   {
     text: '前端',
@@ -11,23 +13,23 @@ export default [
   },
   {
     text: '面试题',
-    link: '/interview/'
+    link: readFileList('interview')[0].link
   },
   {
     text: 'linux',
-    link: '/linux/',
+    link: readFileList('linux')[0].link,
   },
   {
     text: '博文',
-    link: '/guide/',
+    link: readFileList('guide')[0].link,
   },
   {
     text: '区块链',
-    link: '/blockchain/',
+    link: readFileList('blockchain')[0].link,
   },
   {
     text: '随写',
-    link: '/daily/'
+    link: readFileList('daily')[0].link
   },
   { 
     text: '考研',  

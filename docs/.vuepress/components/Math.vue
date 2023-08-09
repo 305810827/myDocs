@@ -58,6 +58,7 @@
                 { id: 'sub41', parentid: 'sub4', topic: '常用导数公式', url:'/examination/math/formula/常用导数公式.html' },
                 { id: 'sub42', parentid: 'sub4', topic: '常用积分公式', url:'/examination/math/formula/常用积分公式.html' },
                 { id: 'sub43', parentid: 'sub4', topic: '常用极限公式', url:'/examination/math/formula/常用极限公式.html' },
+                { id: 'sub44', parentid: 'sub4', topic: '三角函数导数公式', url:'/examination/math/formula/三角函数导数公式.html' },
                 // { id: 'sub42', parentid: 'sub4', topic: '积分专项' },
                 // { id: 'sub43', parentid: 'sub4', topic: 'jk' },
             ],

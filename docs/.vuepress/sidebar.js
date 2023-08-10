@@ -72,10 +72,8 @@ export default {
         'map',
         'reflect',
     ],
-    '/frontend/vite/': [
-        '',
-        'sortUserPlugins'
-    ],
+    '/frontend/vite/':readFileList('frontend/vite'),
+    '/frontend/ts/': readFileList('frontend/ts'),
     '/examination/math': readFileList('examination/math'),
     '/examination/math/formula': readFileList('examination/formula'), // 公式
     '/examination/english': readFileList('examination/english'),

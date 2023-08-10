@@ -8,12 +8,15 @@ export default [
       { text: 'html', link: '/frontend/html/' },
       { text: 'css', link: '/frontend/css/' },
       { text: 'js', link: '/frontend/js/' },
-      { text: 'vite', link: '/frontend/vite/' }
+      { text: 'ts', link: '/frontend/ts/ts常见符号的含义和用法.html' },
+      { text: 'vite', link: '/frontend/vite/sortUserPlugins.html' }
+      // { text: 'vite', link: readFileList('/frontend/vite/')[0].link }
     ]
   },
   {
     text: '面试题',
-    link: readFileList('interview')[0].link
+    link: '/interview/'
+    // link: readFileList('interview')[0].link
   },
   {
     text: 'linux',
@@ -21,7 +24,8 @@ export default [
   },
   {
     text: '博文',
-    link: readFileList('guide')[0].link,
+    link: '/guide/',
+    // link: readFileList('guide')[0].link,
   },
   {
     text: '区块链',

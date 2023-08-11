@@ -44,23 +44,53 @@
 
                 { id: 'sub13', parentid: 'sub1', topic: '函数的图像' },
 
-                { id: 'sub2', parentid: 'root', topic: '概率论', 'background-color': '#0000ff', },
-                { id: 'sub3', parentid: 'root', topic: '线性代数', 'background-color': '#0000ff', },
+                { 
+                  id: 'sub2', 
+                  parentid: 'root', 
+                  topic: '概率论', 
+                  'background-color': '#0000ff'
+                },
+
+                { 
+                  id: 'sub3', 
+                  parentid: 'root', 
+                  topic: '线性代数', 
+                  'background-color': '#0000ff'
+                },
 
                 {
-                    'id': 'sub4',
-                    'parentid': 'root',
-                    'topic': '公式',
-                    'direction': 'left',
-                    'background-color': '#0000ff',
+                  'id': 'sub4',
+                  'parentid': 'root',
+                  'topic': '公式',
+                  'direction': 'left',
+                  'background-color': '#0000ff',
                 },
-                // { id: 'sub41', parentid: 'sub4', topic: '导数专项' },
+                
                 { id: 'sub41', parentid: 'sub4', topic: '常用导数公式', url:'/examination/math/formula/常用导数公式.html' },
                 { id: 'sub42', parentid: 'sub4', topic: '常用积分公式', url:'/examination/math/formula/常用积分公式.html' },
                 { id: 'sub43', parentid: 'sub4', topic: '常用极限公式', url:'/examination/math/formula/常用极限公式.html' },
                 { id: 'sub44', parentid: 'sub4', topic: '三角函数导数公式', url:'/examination/math/formula/三角函数导数公式.html' },
-                // { id: 'sub42', parentid: 'sub4', topic: '积分专项' },
-                // { id: 'sub43', parentid: 'sub4', topic: 'jk' },
+
+                
+                 {
+                  'id': 'sub5',
+                  'parentid': 'root',
+                  'topic': '常用基础知识',
+                  'direction': 'left',
+                  'background-color': '#0000ff',
+                },
+
+                { id: 'sub51', parentid: 'sub5', topic: '三角函数', url:'/examination/math/formula/三角函数.html'},
+                { id: 'sub52', parentid: 'sub5', topic: '数列', url:'/examination/math/formula/数列.html' },
+                { id: 'sub53', parentid: 'sub5', topic: '指数运算法则', url:'/examination/math/formula/指数运算法则.html' },
+                { id: 'sub54', parentid: 'sub5', topic: '对数运算法则', url:'/examination/math/formula/对数运算法则.html' },
+                { id: 'sub55', parentid: 'sub5', topic: '一元二次方程基础', url:'/examination/math/formula/一元二次方程基础.html' },
+                { id: 'sub56', parentid: 'sub5', topic: '因式分解公式', url:'/examination/math/formula/因式分解公式.html' },
+                { id: 'sub57', parentid: 'sub5', topic: '阶乘与双阶乘', url:'/examination/math/formula/阶乘与双阶乘.html' },
+                { id: 'sub58', parentid: 'sub5', topic: '常用不等式', url:'/examination/math/formula/常用不等式.html' },
+
+
+                
             ],
         }
       }

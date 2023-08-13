@@ -14,6 +14,7 @@ sidebar: false
 </style>
 
 
+
 <ClientOnly>
   <Math/>
 </ClientOnly>

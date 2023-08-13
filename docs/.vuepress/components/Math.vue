@@ -81,7 +81,13 @@
                 },
 
                 { id: 'sub51', parentid: 'sub5', topic: '三角函数', url:'/examination/math/formula/三角函数.html'},
+
                 { id: 'sub52', parentid: 'sub5', topic: '数列', url:'/examination/math/formula/数列.html' },
+                { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/数列极限.html' },
+                { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/运算规则.html' },
+                { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/夹逼准则.html' },
+                { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/单调有界准则.html' },
+
                 { id: 'sub53', parentid: 'sub5', topic: '指数运算法则', url:'/examination/math/formula/指数运算法则.html' },
                 { id: 'sub54', parentid: 'sub5', topic: '对数运算法则', url:'/examination/math/formula/对数运算法则.html' },
                 { id: 'sub55', parentid: 'sub5', topic: '一元二次方程基础', url:'/examination/math/formula/一元二次方程基础.html' },

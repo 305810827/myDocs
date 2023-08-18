@@ -27,6 +27,13 @@
                 { id: 'sub5', parentid: 'root', topic: '[merc]:贸易；报酬', url:'/examination/english/merc.html'},
                 { id: 'sub6', parentid: 'root', topic: '[not]:知道；标志', url:'/examination/english/not.html'},
 
+                { id: 'sub6', parentid: 'root', topic: '[nounce],[nunci]:报告', url:'/examination/english/nounce.html'},
+                { id: 'sub6', parentid: 'root', topic: '[pel],[puls]:推动;驱使', url:'/examination/english/pel.html'},
+                
+                { id: 'sub6', parentid: 'root', topic: '[spec],[spi(c)],[scop]:看，观察', url:'/examination/english/spec.html'},
+                { id: 'sub6', parentid: 'root', topic: '[pel],[puls]:推动;驱使', url:'/examination/english/pel.html'},
+
+
 
                 // { id: 'sub2', parentid: 'root', topic: '概率论' },
 

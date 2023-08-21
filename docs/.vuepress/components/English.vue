@@ -33,6 +33,9 @@
                 { id: 'sub6', parentid: 'root', topic: '[spec],[spi(c)],[scop]:看，观察', url:'/examination/english/spec.html'},
                 { id: 'sub6', parentid: 'root', topic: '[pel],[puls]:推动;驱使', url:'/examination/english/pel.html'},
 
+                { id: 'sub6', parentid: 'root', topic: '[vis],[vid]:看见', url:'/examination/english/vis.html'},
+                { id: 'sub6', parentid: 'root', topic: '[vid],[vis]:分开', url:'/examination/english/vis.html'},
+
 
 
                 // { id: 'sub2', parentid: 'root', topic: '概率论' },

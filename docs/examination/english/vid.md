@@ -23,6 +23,21 @@ e.g. We devised a scheme to help him.
 
 device 设备
 
+### 5.individual /.mdi'vidjusl/ a.个人的,单独的 n.个人，个体
+in-:不  不能再分的-> 单个人
+
+individual income tax 个人所得税
+
+### 6.widow /'widau/ n.寡妇
+
+dowager  遗孀；贵妇
+
+### 7.inevitable /m'evitsbl/ a.不可避免的，必然发生的
+
+e.g. It was inevitable that there would be job losses
+
+裁员是不可避免的事
+
 <style>
 .page-meta {
     display: none;

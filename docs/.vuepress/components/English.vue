@@ -34,7 +34,10 @@
                 { id: 'sub6', parentid: 'root', topic: '[pel],[puls]:推动;驱使', url:'/examination/english/pel.html'},
 
                 { id: 'sub6', parentid: 'root', topic: '[vis],[vid]:看见', url:'/examination/english/vis.html'},
-                { id: 'sub6', parentid: 'root', topic: '[vid],[vis]:分开', url:'/examination/english/vis.html'},
+                { id: 'sub6', parentid: 'root', topic: '[vid],[vis]:分开', url:'/examination/english/vid.html'},
+
+                { id: 'sub6', parentid: 'root', topic: '[spir]:呼吸', url:'/examination/english/spir.html'},
+                { id: 'sub6', parentid: 'root', topic: '[vid],[vis]:分开', url:'/examination/english/sper.html'},
 
 
 

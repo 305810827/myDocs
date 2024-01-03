@@ -39,6 +39,11 @@
                 { id: 'sub6', parentid: 'root', topic: '[spir]:呼吸', url:'/examination/english/spir.html'},
                 { id: 'sub6', parentid: 'root', topic: '[vid],[vis]:分开', url:'/examination/english/sper.html'},
 
+                { id: 'sub6', parentid: 'root', topic: '[rod],[ros]:啃咬', url:'/examination/english/rod.html'},
+                { id: 'sub6', parentid: 'root', topic: '[cant],[cent]:唱', url:'/examination/english/cant.html'},
+                { id: 'sub6', parentid: 'root', topic: '[dic],[dict]:说;宣称', url:'/examination/english/dic.html'},
+
+
 
 
                 // { id: 'sub2', parentid: 'root', topic: '概率论' },

@@ -1,8 +1,13 @@
-webstorm 批量正则使用import替换require
+**webstorm 批量正则使用import替换require**
 
-![image-20210901165415773](/Users/xuyanjie/Library/Application Support/typora-user-images/image-20210901165415773.png)
+\- `Ctrl + R`：当前文件替换
+\- `Ctrl + Alt + R`：全局替换
 
-`[const|var|let]+([\s\w\{\,\}]+)[\=\s]+require\(([\w\S]+).*?\)`
+![image-20240104100436988](../image/webstorm replace/image-20240104100436988.png)`
 
-`import$1from $2`
+```
+[const|var|let]+([\s\w\{\,\}]+)[\=\s]+require\(([\w\S]+).*?\)
+
+import$1from $2
+```
 

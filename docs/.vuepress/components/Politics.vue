@@ -49,3 +49,8 @@
     
   }
   </script>
+<style scoped>
+/deep/#jsmind_container {
+    height: 1000px;
+}
+</style>

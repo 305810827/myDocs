@@ -84,9 +84,9 @@
 
                 { id: 'sub52', parentid: 'sub5', topic: '数列', url:'/examination/math/formula/数列.html' },
                 { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/数列极限.html' },
-                { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/运算规则.html' },
-                { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/夹逼准则.html' },
-                { id: 'sub521', parentid: 'sub52', topic: '数列极限', url:'/examination/math/单调有界准则.html' },
+                { id: 'sub522', parentid: 'sub52', topic: '数列极限', url:'/examination/math/运算规则.html' },
+                { id: 'sub523', parentid: 'sub52', topic: '数列极限', url:'/examination/math/夹逼准则.html' },
+                { id: 'sub524', parentid: 'sub52', topic: '数列极限', url:'/examination/math/单调有界准则.html' },
 
                 { id: 'sub53', parentid: 'sub5', topic: '指数运算法则', url:'/examination/math/formula/指数运算法则.html' },
                 { id: 'sub54', parentid: 'sub5', topic: '对数运算法则', url:'/examination/math/formula/对数运算法则.html' },

@@ -1,0 +1,1 @@
+import{_ as e,o as _,c as t,b as c}from"./app-53705635.js";const l={},o=c("p",null,"Flex:设置flex之后，子元素自动成为容器成员，称为Flex项目",-1),s=[o];function n(r,a){return _(),t("div",null,s)}const d=e(l,[["render",n],["__file","grid、flex差异.html.vue"]]);export{d as default};

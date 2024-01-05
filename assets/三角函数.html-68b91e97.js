@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-34ca3a34","path":"/examination/math/formula/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1691761886000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"examination/math/formula/三角函数.md"}');export{a as data};

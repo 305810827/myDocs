@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-46f82150","path":"/blockchain/web3.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1704424456000,"contributors":[{"name":"xuyanjie","email":"xuyanjie@bitoffer.com","commits":1},{"name":"xuyanjie-jwk","email":"xuyanjie-jwk@360shuke.com","commits":1}]},"filePathRelative":"blockchain/web3.md"}');export{e as data};

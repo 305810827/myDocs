@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2e1272a8","path":"/frontend/js/JavaScript%20%E5%BC%95%E6%93%8E.html","title":"JavaScript 引擎","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1653380275000,"contributors":[{"name":"v_yanjiexu","email":"305810827@qq.com","commits":1}]},"filePathRelative":"frontend/js/JavaScript 引擎.md"}');export{t as data};

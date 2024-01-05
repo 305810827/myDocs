@@ -1,0 +1,9 @@
+import{_ as e,o as t,c as a,a as l}from"./app-53705635.js";const n={},s=l(`<h3 id="问题描述" tabindex="-1"><a class="header-anchor" href="#问题描述" aria-hidden="true">#</a> 问题描述</h3><p>滑动自定义的遮罩层，会出现滚动穿透的问题，如下图，即遮罩层下面的列表页面依旧可以滚动。</p><h3 id="解决方案" tabindex="-1"><a class="header-anchor" href="#解决方案" aria-hidden="true">#</a> 解决方案</h3><p>场景一：【遮罩层没有滚动事件】</p><p>直接在遮罩层的父节点上添加catchtouchmove=&quot;preventTouchMove&quot;属性，例如：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>&lt;view class=&quot;mask&quot; catchtouchmove=&quot;preventTouchMove&quot;&gt;
+    我是遮罩层
+&lt;/view&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在page.js中添加空的preventTouchMove方法，例如：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>preventTouchMove:function(){}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>场景二：弹窗内有滚动内容</p><p>方法一：</p><p>在弹窗外层根元素动态添加一个no-scroll样式，定义no-scroll为{height: 100%; overflow: hidden;}</p><p>当需要阻止滑动的弹窗显示时添加no-scroll，弹窗关闭去掉no-scroll即可。</p><p>此种方式的缺点是当弹窗显示增加no-scrll后弹窗下面的页面会回到顶部。</p><p>方法二：</p><p>将整个底层页面使用 scroll-view 包裹起来，设置 scroll-y 当显示弹出层的时候为 true， 闭关弹出层的时候为 false</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>&lt;scroll-view scroll-y=&quot;{{showModalStatus?&#39;true&#39;:&#39;false&#39;}}&quot; style=&quot;height:{{windowHeight}}px&quot;
+&gt;
+
+&lt;/scroll-view&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,16),i=[s];function o(d,c){return t(),a("div",null,i)}const u=e(n,[["render",o],["__file","遮罩层滑动事件的穿透问题.html.vue"]]);export{u as default};

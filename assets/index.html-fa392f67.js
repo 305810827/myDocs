@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,b as e,d as n}from"./app-53705635.js";const o={},s=e("h1",{id:"面试题",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#面试题","aria-hidden":"true"},"#"),n(" 面试题")],-1),r=e("p",null,"前端越来越卷，没有什么技术是不需要的，什么都要会。",-1),_=[s,r];function d(i,l){return a(),c("div",null,_)}const f=t(o,[["render",d],["__file","index.html.vue"]]);export{f as default};

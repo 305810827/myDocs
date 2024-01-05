@@ -1,0 +1,2 @@
+import{_ as e,o as t,c as a,a as s}from"./app-53705635.js";const c={},i=s(`<p>命令</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>mv dir/file dir/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>参数</p><p>-b：当目标文件存在时，先进行备份在覆盖</p><p>-f：当目标文件存在时，强制覆盖</p><p>-i：默认选项，当目标文件存在时，提示是否覆盖</p><p>-t：先指定目标，在制定源</p><p>-v：显示过程</p>`,8),n=[i];function d(r,p){return t(),a("div",null,n)}const o=e(c,[["render",d],["__file","mv.html.vue"]]);export{o as default};

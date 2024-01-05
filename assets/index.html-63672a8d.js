@@ -1,0 +1,1 @@
+import{_ as o,r as e,o as l,c,e as n,w as s}from"./app-53705635.js";const a={};function r(i,d){const t=e("Math"),_=e("ClientOnly");return l(),c("div",null,[n(_,null,{default:s(()=>[n(t)]),_:1})])}const u=o(a,[["render",r],["__file","index.html.vue"]]);export{u as default};

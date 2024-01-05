@@ -1,0 +1,10 @@
+import{_ as e,o as t,c as n,a as d}from"./app-53705635.js";const i={},o=d(`<p><strong>1、使用<code>label</code>元素：</strong> 使用 <code>label</code> 元素可以扩大输入框的可点击区域，并且能够提供更好的可访问性</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>&lt;label for=&quot;myInput&quot;&gt;
+  &lt;input id=&quot;myInput&quot; type=&quot;text&quot; /&gt;
+&lt;/label&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>2、通过<code>cover-view</code>或<code>cover-image</code>元素：</strong> 使用 <code>cover-view</code> 或 <code>cover-image</code> 元素可以创建一个覆盖在 <code>input</code> 上方的视图，从而增加可点击区域。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>&lt;cover-view bindtap=&quot;handleClick&quot;&gt;
+  &lt;input type=&quot;text&quot; /&gt;
+&lt;/cover-view&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>2、通过<code>focus</code>设置input聚焦状态：</strong> 使用 <code>view</code> 元素可以创建一个覆盖在 <code>input</code> 上方的视图，从而增加可点击区域。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>&lt;view bindtap=&quot;handleFocus&quot;&gt;
+  &lt;input type=&quot;text&quot; focus={{focus}} /&gt;
+&lt;/view&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,6),c=[o];function l(s,a){return t(),n("div",null,c)}const r=e(i,[["render",l],["__file","增加input可点击区域.html.vue"]]);export{r as default};

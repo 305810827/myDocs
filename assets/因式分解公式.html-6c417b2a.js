@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,b as _}from"./app-53705635.js";const c="/assets/1691680677733-77f15986.jpg";const o={},n=_("p",null,[_("img",{src:c,alt:"Alt text"})],-1),l=[n];function a(r,i){return t(),s("div",null,l)}const d=e(o,[["render",a],["__file","因式分解公式.html.vue"]]);export{d as default};

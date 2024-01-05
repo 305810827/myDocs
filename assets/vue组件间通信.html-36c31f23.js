@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-bbb1ffc0","path":"/interview/vue/vue%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1.html","title":"Vue组件之间通信方式有哪些","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1653380275000,"contributors":[{"name":"v_yanjiexu","email":"305810827@qq.com","commits":1}]},"filePathRelative":"interview/vue/vue组件间通信.md"}');export{e as data};

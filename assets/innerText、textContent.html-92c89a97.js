@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-3f000584","path":"/interview/other/innerText%E3%80%81textContent.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1681791756000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"interview/other/innerText、textContent.md"}');export{t as data};

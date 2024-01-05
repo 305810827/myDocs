@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,b as _}from"./app-53705635.js";const c="/assets/1691678815497-85d9587f.png";const n={},o=_("p",null,[_("img",{src:c,alt:"Alt text"})],-1),l=[o];function a(r,i){return t(),s("div",null,l)}const m=e(n,[["render",a],["__file","数列.html.vue"]]);export{m as default};

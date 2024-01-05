@@ -1,0 +1,1 @@
+import{_,o as e,c as s,b as t}from"./app-53705635.js";const c="/assets/1691679187712-1d97471e.png",o="/assets/1691679338130-9ccaf828.jpg";const n={},l=t("p",null,[t("img",{src:c,alt:"Alt text"}),t("img",{src:o,alt:"Alt text"})],-1),a=[l];function r(i,m){return e(),s("div",null,a)}const d=_(n,[["render",r],["__file","三角函数.html.vue"]]);export{d as default};

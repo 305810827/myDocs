@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-69eee515","path":"/examination/math/formula/%E6%95%B0%E5%88%97.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1691761886000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"examination/math/formula/数列.md"}');export{a as data};

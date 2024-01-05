@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-21ad643c","path":"/guide/nvm%E7%AE%A1%E7%90%86nodejs%E7%89%88%E6%9C%AC.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1691136244000,"contributors":[{"name":"xuyanjie-jwk","email":"305810827@qq.com","commits":1}]},"filePathRelative":"guide/nvm管理nodejs版本.md"}');export{e as data};

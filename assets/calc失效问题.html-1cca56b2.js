@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c1a7bc84","path":"/wx/calc%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1695714074000,"contributors":[{"name":"xuyanjie-jwk","email":"305810827@qq.com","commits":1}]},"filePathRelative":"wx/calc失效问题.md"}');export{t as data};

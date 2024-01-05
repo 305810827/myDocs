@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-45bf255a","path":"/guide/nginx%E9%85%8D%E7%BD%AE.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1651049227000,"contributors":[{"name":"v_yanjiexu","email":"v_yanjiexu@tencent.com","commits":1}]},"filePathRelative":"guide/nginx配置.md"}');export{e as data};

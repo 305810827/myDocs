@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,b as _}from"./app-53705635.js";const c="/assets/1691680365580-9b4b98c0.png";const n={},o=_("p",null,[_("img",{src:c,alt:"Alt text"})],-1),l=[o];function a(r,i){return t(),s("div",null,l)}const d=e(n,[["render",a],["__file","对数运算法则.html.vue"]]);export{d as default};

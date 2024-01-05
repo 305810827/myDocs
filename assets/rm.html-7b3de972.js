@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cde8b9ec","path":"/linux/rm.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"一、rm","slug":"一、rm","link":"#一、rm","children":[]}],"git":{"updatedTime":1651049227000,"contributors":[{"name":"v_yanjiexu","email":"v_yanjiexu@tencent.com","commits":1}]},"filePathRelative":"linux/rm.md"}');export{e as data};

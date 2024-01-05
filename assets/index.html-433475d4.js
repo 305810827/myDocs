@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4b6a32f7","path":"/examination/politics/","title":"自定义 Vue 页面","lang":"en-US","frontmatter":{"title":"自定义 Vue 页面","footer":false,"sidebar":false},"headers":[],"git":{"updatedTime":1691316435000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"examination/politics/README.md"}');export{e as data};

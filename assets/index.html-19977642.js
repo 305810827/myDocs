@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-14aa5c96","path":"/examination/english/","title":"自定义 Vue 页面","lang":"en-US","frontmatter":{"title":"自定义 Vue 页面","sidebar":false},"headers":[],"git":{"updatedTime":1691316435000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"examination/english/README.md"}');export{e as data};

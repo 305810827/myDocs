@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-579e88f9","path":"/examination/math/formula/%E5%B8%B8%E7%94%A8%E4%B8%8D%E7%AD%89%E5%BC%8F.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1691761903000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"examination/math/formula/常用不等式.md"}');export{a as data};

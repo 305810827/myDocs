@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-41d67bb0","path":"/examination/math/formula/%E5%9B%A0%E5%BC%8F%E5%88%86%E8%A7%A3%E5%85%AC%E5%BC%8F.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1691761903000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"examination/math/formula/因式分解公式.md"}');export{a as data};

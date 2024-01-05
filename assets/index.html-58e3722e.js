@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f0383c18","path":"/linux/","title":"面试题","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1684400417000,"contributors":[{"name":"xuyanjie-jwk","email":"305810827@qq.com","commits":1}]},"filePathRelative":"linux/README.md"}');export{e as data};

@@ -1,0 +1,8 @@
+import{_ as e,o as a,c as d,a as l}from"./app-53705635.js";const i={},r=l(`<h1 id="宝塔面板防火墙firewalld命令行" tabindex="-1"><a class="header-anchor" href="#宝塔面板防火墙firewalld命令行" aria-hidden="true">#</a> 宝塔面板防火墙firewalld命令行</h1><h4 id="_1、查看已放行端口" tabindex="-1"><a class="header-anchor" href="#_1、查看已放行端口" aria-hidden="true">#</a> 1、查看已放行端口</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>firewall-cmd --list-all
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4 id="_2、操作firewalld" tabindex="-1"><a class="header-anchor" href="#_2、操作firewalld" aria-hidden="true">#</a> 2、操作firewalld</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>启动： systemctl start firewalld
+查看状态： systemctl status firewalld
+停止： systemctl disable firewalld
+禁用： systemctl stop firewalld
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、firewalld开放端口" tabindex="-1"><a class="header-anchor" href="#_3、firewalld开放端口" aria-hidden="true">#</a> 3、firewalld开放端口</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>sudo firewall-cmd --zone=public --add-port=3000/tcp --permanent
+sudo firewall-cmd --reload
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,7),s=[r];function t(n,c){return a(),d("div",null,s)}const u=e(i,[["render",t],["__file","firewalld.html.vue"]]);export{u as default};

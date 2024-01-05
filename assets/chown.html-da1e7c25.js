@@ -1,0 +1,1 @@
+import{_ as e,o,c,b as t}from"./app-53705635.js";const n={},s=t("p",null,"chown -R user.group dir （可以连目录下的所有子目录或文件都同时更改文件所有者）",-1),_=[s];function r(a,l){return o(),c("div",null,_)}const h=e(n,[["render",r],["__file","chown.html.vue"]]);export{h as default};

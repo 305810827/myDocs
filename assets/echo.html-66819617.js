@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1aaf1340","path":"/linux/echo.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"一、echo","slug":"一、echo","link":"#一、echo","children":[]}],"git":{"updatedTime":1651049227000,"contributors":[{"name":"v_yanjiexu","email":"v_yanjiexu@tencent.com","commits":1}]},"filePathRelative":"linux/echo.md"}');export{e as data};

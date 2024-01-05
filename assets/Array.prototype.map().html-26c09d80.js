@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ec364848","path":"/interview/js/Array.prototype.map().html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1651049227000,"contributors":[{"name":"v_yanjiexu","email":"v_yanjiexu@tencent.com","commits":1}]},"filePathRelative":"interview/js/Array.prototype.map().md"}');export{e as data};

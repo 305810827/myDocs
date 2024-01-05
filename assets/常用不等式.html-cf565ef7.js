@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as s,b as _}from"./app-53705635.js";const c="/assets/1691681004184-8893f996.png",n="/assets/1691681165055-d8e89930.png";const o={},l=_("p",null,[_("img",{src:c,alt:"Alt text"}),_("img",{src:n,alt:"Alt text"})],-1),a=[l];function r(i,m){return e(),s("div",null,a)}const d=t(o,[["render",r],["__file","常用不等式.html.vue"]]);export{d as default};

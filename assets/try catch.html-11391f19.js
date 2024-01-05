@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-007ba4a5","path":"/interview/js/try%20catch.html","title":"try catch 能捕获到哪些 JS 异常","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1651049227000,"contributors":[{"name":"v_yanjiexu","email":"v_yanjiexu@tencent.com","commits":1}]},"filePathRelative":"interview/js/try catch.md"}');export{t as data};

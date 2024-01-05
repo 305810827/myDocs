@@ -1,0 +1,1 @@
+import{_,o as t,c as a,b as e,d as c}from"./app-53705635.js";const o={},r=e("h1",{id:"vue数据响应式处理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vue数据响应式处理","aria-hidden":"true"},"#"),c(" vue数据响应式处理")],-1),s=[r];function n(d,i){return t(),a("div",null,s)}const h=_(o,[["render",n],["__file","vue数据响应式处理.html.vue"]]);export{h as default};

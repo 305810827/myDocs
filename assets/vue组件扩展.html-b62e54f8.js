@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-35760a8e","path":"/interview/vue/vue%E7%BB%84%E4%BB%B6%E6%89%A9%E5%B1%95.html","title":"Vue中如何扩展一个组件","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1653380275000,"contributors":[{"name":"v_yanjiexu","email":"305810827@qq.com","commits":1}]},"filePathRelative":"interview/vue/vue组件扩展.md"}');export{e as data};

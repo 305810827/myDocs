@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-c189d09e","path":"/interview/js/js%E7%9A%84%E5%87%A0%E7%A7%8D%E7%BB%A7%E6%89%BF%E6%96%B9%E6%B3%95.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1655191670000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"interview/js/js的几种继承方法.md"}');export{e as data};

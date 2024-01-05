@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-afce840c","path":"/interview/other/require.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1681791756000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"interview/other/require.md"}');export{e as data};

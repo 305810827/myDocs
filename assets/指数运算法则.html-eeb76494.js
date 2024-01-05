@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-b4445870","path":"/examination/math/formula/%E6%8C%87%E6%95%B0%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1691761903000,"contributors":[{"name":"xuyanjie","email":"305810827@qq.com","commits":1}]},"filePathRelative":"examination/math/formula/指数运算法则.md"}');export{a as data};

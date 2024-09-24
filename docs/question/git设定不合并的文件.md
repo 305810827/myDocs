@@ -4,13 +4,13 @@
 
 
 
-1、设置git merge配置项
+1、启用merge策略, 设置git merge配置项
 
 git config --global merge.ours.driver true
 
-2、新建.gitattributes文件
+2、新建.gitattributes文件，配置要忽略merge的文件
 
-根目录下创建.gitattributes文件，在文件中写入：read merge=ours
+根目录下创建.gitattributes文件，在文件中写入：read.me merge=ours
 
 3、提交推送.gitattributes文件
 
